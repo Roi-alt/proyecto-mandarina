@@ -6,10 +6,11 @@
     <title>Left 4 Dead 2 - Tienda Oficial</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="Estilitos.css" rel="stylesheet">
+    <link href="../styles/EstilosNuevos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Permanent+Marker&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<body>
+<body class="l4d2">
     <div class="container">        
         <header class="row mb-4">
             <div class="col-9">
@@ -25,10 +26,15 @@
         <div class="row g-4">            
             <div class="col-lg-7">                
     <div class="position-relative">            
-            <div id="carruselL4D2" class="carousel slide" data-bs-ride="carousel">                
+            <div id="carruselL4D2" class="carousel slide col-12" data-bs-ride="carousel">                
                 <div class="carousel-inner rounded">
                     <div class="carousel-item active">
                         <img src="Img/maxresdefault.jpg" class="d-block w-100" style="height: 380px; object-fit: cover;" alt="Gameplay 1">
+                        <a href="https://youtu.be/OqUUfwSN-MY?si=cRMlXOpXIi4logV9" target="_blank" class="text-decoration-none text-white">
+                            <div class="Play position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-75 text-white rounded-circle d-flex justify-content-center align-items-center text-center">
+                                <span class="fs-2 ms-1">▶</span>
+                            </div>
+                        </a> 
                         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                             <h5>Left 4 Dead 2</h5>
                             <p>Ábrete paso por las calles infestadas del Sur.</p>
@@ -85,29 +91,25 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Siguiente</span>
                 </button>
-            <a href="https://youtu.be/OqUUfwSN-MY?si=cRMlXOpXIi4logV9" target="_blank" class="text-decoration-none text-white">
-                </div> <div class="Play position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-75 text-white rounded-circle d-flex justify-content-center align-items-center text-center">
-                    <span class="fs-2 ms-1">▶</span>
-                </div>
-            </a>                    
-    </div>
-    <div class="row mt-2 g-2">
-        <div class="col-3"><img src="Img/1.jpg" class="img-fluid rounded" alt="Mini 1"></div>
-        <div class="col-3"><img src="Img/2.jpg" class="img-fluid rounded" alt="Mini 2"></div>
-        <div class="col-3"><img src="Img/3.jpg" class="img-fluid rounded" alt="Mini 3"></div>
-        <div class="col-3">
-            <div class="bg-secondary text-center rounded d-flex justify-content-center align-items-center text-center h-100 text-white small">+2 Fotos</div>
+                </div>                    
         </div>
-    </div>
+        <div class="row mt-2 g-2">
+            <div class="col-3"><img src="Img/1.jpg" class="img-fluid rounded" alt="Mini 1"></div>
+            <div class="col-3"><img src="Img/2.jpg" class="img-fluid rounded" alt="Mini 2"></div>
+            <div class="col-3"><img src="Img/3.jpg" class="img-fluid rounded" alt="Mini 3"></div>
+            <div class="col-3">
+                <div class="bg-secondary text-center rounded d-flex justify-content-center align-items-center text-center h-100 text-white small">+2 Fotos</div>
+            </div>
+        </div>
     </div>
             <div class="col-lg-5">
                 <div class="caja h-100 d-flex flex-column justify-content-between">                    
                     <div>
                         <p class="lead">Este cooperativo de acción y terror de nueva generación te llevará a ti y a tus amigos por los pantanos, cementerios y ciudades del Sur profundo.</p>                        
                         <div class="mt-4 opacity-75 small">
-                            <p><strong>Reseñas generales:</strong> <span class="tex">Extremadamente positivas</span></p>
-                            <p><strong>Fecha de lanzamiento:</strong> <span class="text-white">16 Nov, 2009</span></p>
-                            <p><strong>Desarrollador / Editor:</strong> <span class="text-white">Valve</span></p>
+                            <p><strong class="StL4D2">Reseñas generales:</strong> <span class="tex">Extremadamente positivas</span></p>
+                            <p><strong class="StL4D2">Fecha de lanzamiento:</strong> <span class="text-white">16 Nov, 2009</span></p>
+                            <p><strong class="StL4D2">Desarrollador / Editor:</strong> <span class="text-white">Valve</span></p>
                         </div>
                     </div>
                     <div class="pt-3 border-top border-secondary mt-3">
@@ -115,7 +117,7 @@
                             <span class="text-white text-uppercase font-monospace">Precio base:</span>
                             <span class="fs-3 fw-bold text-white">$9.99 USD</span>
                         </div>
-                        <button class="btn-des">Comprar Ahora</button>
+                        <button class="btn-des" onclick="Comprar(9.99)">Comprar Ahora</button>
                     </div>
                 </div>
             </div>
@@ -129,19 +131,19 @@
                     <p>Jugarás como uno de los cuatro nuevos supervivientes, armados con un enorme y devastador arsenal de armas clásicas y mejoradas. Además de las armas de fuego, tendrás la oportunidad de desahogar tu agresividad con una gran variedad de armas de combate cuerpo a cuerpo, ideales para las distancias cortas, que van desde motosierras y hachas hasta bates de béisbol y sartenes mortales.</p>
                     <p>Conoce a:</p>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-3 text-center">
+                        <div class="col-6 col-lg-3 text-center">
                             <img src="Img/Ellis.webp" class="img-fluid mini">
                             <p>ELLIS</p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 text-center">
+                        <div class="col-6 col-lg-3 text-center">
                             <img src="Img/Coach.webp" class="img-fluid mini">
                             <p>COACH</p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 text-center">
+                        <div class="col-6 col-lg-3 text-center">
                             <img src="Img/Rochelle.jpg" class="img-fluid mini">
                             <p>ROCHELLE</p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 text-center">
+                        <div class="col-6 col-lg-3 text-center">
                             <img src="Img/Nick.webp" class="img-fluid mini">
                             <p>NICK</p>
                         </div>
@@ -157,22 +159,22 @@
                     </div>                    
                     <div class="col-6">
                         <h6 class="tex">Mínimos:</h6>
-                        <ul class="requis">
-                            <li><strong>SO:</strong> Win 7 / XP</li>
-                            <li><strong>CPU:</strong> Pentium 4 3.0GHz</li>
-                            <li><strong>RAM:</strong> 2 GB</li>
-                            <li><strong>GPU:</strong> 128 MB video</li>
-                            <li><strong>Espacio:</strong> 13 GB</li>
+                        <ul class="requis UL4D2">
+                            <li><strong class="StL4D2">SO:</strong> Win 7 / XP</li>
+                            <li><strong class="StL4D2">CPU:</strong> Pentium 4 3.0GHz</li>
+                            <li><strong class="StL4D2">RAM:</strong> 2 GB</li>
+                            <li><strong class="StL4D2">GPU:</strong> 128 MB video</li>
+                            <li><strong class="StL4D2">Espacio:</strong> 13 GB</li>
                         </ul>
                     </div>
                     <div class="col-6">
                         <h6 class="tex">Recomendados:</h6>
-                        <ul class="requis">
-                            <li><strong>SO:</strong> Win 7 / Vista</li>
-                            <li><strong>CPU:</strong> Intel Core 2 Duo</li>
-                            <li><strong>RAM:</strong> 2 GB</li>
-                            <li><strong>GPU:</strong> Shader Model 3.0</li>
-                            <li><strong>Espacio:</strong> 13 GB</li>
+                        <ul class="requis UL4D2">
+                            <li><strong class="StL4D2">SO:</strong> Win 7 / Vista</li>
+                            <li><strong class="StL4D2">CPU:</strong> Intel Core 2 Duo</li>
+                            <li><strong class="StL4D2">RAM:</strong> 2 GB</li>
+                            <li><strong class="StL4D2">GPU:</strong> Shader Model 3.0</li>
+                            <li><strong class="StL4D2">Espacio:</strong> 13 GB</li>
                         </ul>
                     </div>
                 </div>
@@ -182,20 +184,21 @@
             <h3 class="tirojo">Detalles adicionales</h3>
             <div class="row g-3 opacity-75 small">
                 <div class="col-6 col-md-4">
-                    <strong>Título:</strong> Left 4 Dead 2<br>
-                    <strong>Género:</strong> Acción, Cooperativo
+                    <strong class="StL4D2">Título:</strong> Left 4 Dead 2<br>
+                    <strong class="StL4D2">Género:</strong> Acción, Cooperativo
                 </div>
                 <div class="col-6 col-md-4">
-                    <strong>Almacenamiento en nube:</strong> Compatible<br>
-                    <strong>Multijugador:</strong> Sí (En línea y LAN)
+                    <strong class="StL4D2">Almacenamiento en nube:</strong> Compatible<br>
+                    <strong class="StL4D2">Multijugador:</strong> Sí (En línea y LAN)
                 </div>
                 <div class="col-12 col-md-4">
-                    <strong>Editor:</strong> Valve<br>
-                    <strong>Soporte técnico:</strong> help.steampowered.com
+                    <strong class="StL4D2">Editor:</strong> Valve<br>
+                    <strong class="StL4D2">Soporte técnico:</strong> help.steampowered.com
                 </div>
             </div>
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scripts/funciones.js"></script>
 </body>
 </html>
