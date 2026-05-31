@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nompag | minecraft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="juegosRo.css">
+</head>
+
+<body>
+    <header>
+        <h1>navbar</h1>
+    </header>
+    <!--hero minecraft-->
+    <section class="hero-minecraft">
+        <div class=" container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+                    <h1 class="fw-bold mb-4" style="font-size: 2.5rem;">
+                        MINECRAFT
+                    </h1>
+                    <p class="lead mb-4 opacity-90 small"
+                        style="font-size: 0.85rem; line-height: 1.6; letter-spacing: 0.5px;">
+                        Un mundo infinito de bloques donde tus decisiones definen tu propia aventura. Explora biomas
+                        completamente nuevos ambientados en el misterioso mundo de bloques.
+                        Domina el arte del crafteo y sobrevive o
+                        construye tu hogar en
+                        este sandbox único.
+                    </p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-center justify-content-lg-start">
+                        <a href="#carrito" class="btn btn-warning btn-lg px-4 fw-bold text-dark"
+                            style="font-size: 0.8rem;">
+                            añadir al inventario
+                        </a>
+                        <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#videoModal">
+                            ver tráiler
+                        </button>
+                    </div>
+
+                    <div class="row mt-5 text-center">
+                        <div class="col-4">
+                            <div class="display-6 fw-bold">10M+</div>
+                            <div class="small opacity-75">jugadores activos</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="display-6 fw-bold">∞</div>
+                            <div class="small opacity-75">Biomas</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="display-6 fw-bold">9.8</div>
+                            <div class="small opacity-75">Calificación</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="bg-dark rounded-3 p-3 shadow-lg">
+
+                        <div class="ratio ratio-4x3">
+                            <div id="deltaruneSlider" class="carousel slide" data-bs-ride="carousel">
+
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#deltaruneSlider" data-bs-slide-to="0"
+                                        class="active"></button>
+                                    <button type="button" data-bs-target="#deltaruneSlider"
+                                        data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#deltaruneSlider"
+                                        data-bs-slide-to="2"></button>
+                                </div>
+
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active h-100" data-bs-interval="4000">
+                                        <img src="https://blog.connectedcamps.com/wp-content/uploads/2016/03/FVeLtzS.jpg"
+                                            class="d-block w-100 h-100" style="object-fit: cover;" alt="Personajes">
+                                        <div
+                                            class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                                            <h5 style="color: rgb(255, 51, 153);">Modo Supervivencia</h5>
+                                            <p class="mb-0"
+                                                style="font-size: 0.85rem; line-height: 1.6; letter-spacing: 0.5px;">
+                                                Reúne recursos para resistir la noche.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item h-100" data-bs-interval="4000">
+                                        <img src="https://www.minecraft.net/content/dam/minecraftnet/games/dungeons/screenshots/bttn-header.jpg"
+                                            class="d-block w-100 h-100" style="object-fit: cover;" alt="Capitulo 2">
+                                        <div
+                                            class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                                            <h5 style="color: rgb(0, 255, 204);">El Nether</h5>
+                                            <p class="mb-0"
+                                                style="font-size: 0.85rem; line-height: 1.6; letter-spacing: 0.5px;">
+                                                Explora el peligroso inframundo.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item h-100" data-bs-interval="4000">
+                                        <img src="https://assets.badlion.net/blog/rarest-minecraft-structures/minecraft-woodland-mansion.webp"
+                                            class="d-block w-100 h-100" style="object-fit: cover;" alt="Jefe Secreto">
+                                        <div
+                                            class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                                            <h5 style="color: rgb(255, 214, 0);">Estructuras Ocultas</h5>
+                                            <p class="mb-0"
+                                                style="font-size: 0.85rem; line-height: 1.6; letter-spacing: 0.5px;">
+                                                Encuentra templos secretos y enfréntate a los jefes
+                                                del juego.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#deltaruneSlider"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#deltaruneSlider"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--lugar de repositorio-->
+    <main>
+        <section class="fondo-minecraft" style="color: #ffffff;">
+            <div class="container py-5">
+                <div class="row g-4">
+
+                    <div class="row g-4">
+                        <div class="col-md-12 col-lg-8">
+                            <div class="card text-bg-dark">
+                                <img src="https://i.pinimg.com/736x/c7/81/a6/c781a6d9929d1ccaa2b23eb2197f7c25.jpg"
+                                    class="card-img" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-success bg-transparent text-white h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">El Comienzo</h5>
+                                    <p>Tras aparecer en un bioma aleatorio, debes picar madera y piedra para sobrevivir.
+                                        ¿Elegirás construir un refugio seguro o explorar las profundidades?</p>
+                                    <h5 class="card-title">Banda Sonora</h5>
+                                    <a href="#" class="btn btn-success">nivel 1</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-success bg-transparent text-white h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mundo Digital</h5>
+                                    <p>La aventura se traslada a las minas abandonadas. Entre aldeanos y la
+                                        creciente amenaza de los creepers, el destino de tu servidor
+                                        pende de un hilo.</p>
+                                    <h5 class="card-title">Banda Sonora</h5>
+                                    <a href="#" class="btn btn-success">nivel 2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-8">
+                            <div class="card text-bg-dark">
+                                <img src="https://i0.wp.com/www.gamerfocus.co/wp-content/uploads/2021/12/minecraft_caves_and_cliffs_update_2_18.jpg?fit=1920%2C1067&ssl=1"
+                                    class="card-img" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-12 col-lg-8">
+                            <div class="card text-bg-dark">
+                                <img src="https://nintendosoup.com/wp-content/uploads/2020/06/netherupdate-1038x576.jpg"
+                                    class="card-img" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-success bg-transparent text-white h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Noche Profunda</h5>
+                                    <p>Los monstruos se filtran en tu hogar. Un ambiente doméstico se transforma en un
+                                        campo de batalla incierto donde la redstone y el hierro comienzan a
+                                        ser esenciales.</p>
+                                    <h5 class="card-title">Banda Sonora</h5>
+                                    <a href="#" class="btn btn-success">nivel 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-success bg-transparent text-white h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">La Profecía</h5>
+                                    <p>Más allá del End, los portales aguardan. Un desafío marcado por
+                                        secretos enterrados y el enfrentamiento contra jefes que desafían las reglas del
+                                        mundo cúbico.</p>
+                                    <h5 class="card-title">Banda Sonora</h5>
+                                    <a href="#" class="btn btn-success">nivel 4</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-8">
+                            <div class="card text-bg-dark">
+                                <img src="https://www.minecraft.net/content/dam/minecraftnet/archive/bd0ea75cd9da517467cc637efb30950f-videocover.jpg"
+                                    class="card-img" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-success bg-transparent text-white h-100">
+                        <div class="card-body">
+                            mas actualizaciones julio 2026 &copy; Mojang Studios
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fondo-minecraft">
+            <div class="container my-5">
+                <h2 class="text-white mb-4 text-center">Requisitos del Sistema</h2>
+                <div class="accordion accordion-flush" id="accordionRequisitos">
+                    <!-- Requisitos Mínimos -->
+                    <div class="accordion-item bg-transparent border-success">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#minimos">
+                                Requisitos Mínimos
+                            </button>
+                        </h2>
+                        <div id="minimos" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionRequisitos">
+                            <div class="accordion-body text-white">
+                                <ul>
+                                    <li><strong>SO:</strong> Windows 10 o superior</li>
+                                    <li><strong>Procesador:</strong> Intel Core i3</li>
+                                    <li><strong>Memoria:</strong> 4 GB RAM</li>
+                                    <li><strong>Gráficos:</strong> Integrados</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Requisitos Recomendados -->
+                    <div class="accordion-item bg-transparent border-success">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#recomendados">
+                                Requisitos Recomendados
+                            </button>
+                        </h2>
+                        <div id="recomendados" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionRequisitos">
+                            <div class="accordion-body text-white">
+                                <ul>
+                                    <li><strong>SO:</strong> Windows 11</li>
+                                    <li><strong>Procesador:</strong> Intel Core i7</li>
+                                    <li><strong>Memoria:</strong> 16 GB RAM</li>
+                                    <li><strong>Gráficos:</strong> Tarjeta dedicada 4GB VRAM</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Modal del Video -->
+            <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-body p-0">
+                            <div class="ratio ratio-16x9">
+                                <a href="https://www.youtube.com/watch?v=CHAbHz8iYHc" target="_blank"
+                                    class="d-flex align-items-center justify-content-center" style="background: black;">
+                                    <img src="https://img.youtube.com/vi/CHAbHz8iYHc/maxresdefault.jpg"
+                                        alt="Ver tráiler" class="img-fluid">
+                                    <div class="position-absolute">
+                                        <svg width="60" height="60" viewBox="0 0 68 48">
+                                            <path
+                                                d="M66.52 7.74c-0.78-2.93-3.09-5.24-6.02-6.02C55.79 0.6 34 0.6 34 0.6s-21.79 0-26.5 1.12c-2.93 0.78-5.24 3.09-6.02 6.02C0.6 12.46 0.6 24 0.6 24s0 11.54 1.12 16.26c0.78 2.93 3.09 5.24 6.02 6.02C12.55 47.4 34 47.4 34 47.4s21.79 0 26.5-1.12c2.93-0.78 5.24-3.09 6.02-6.02C67.4 35.54 67.4 24 67.4 24s0-11.54-0.88-16.26z"
+                                                fill="red"></path>
+                                            <path d="M45 24L24 12v24z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
