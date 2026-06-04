@@ -4,6 +4,57 @@
         }
     });
     document.addEventListener("DOMContentLoaded", function() {
+        const NavCom = `
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg navbar-dark px-3">
+                <div class="container-fluid">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/036/218/371/small/ai-generated-futuristic-blue-robot-playing-virtual-reality-games-generated-by-ai-free-photo.jpg"
+                        alt="Logo" style="width: 50px; height: 50px; object-fit: cover;" class="me-2 rounded">
+                    <a class="navbar-brand fw-bold" href="L4D2.html">Papujuegos</a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" id="nav-tienda" href="tienda.html">Tienda</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Comunidad
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Discusiones</a></li>
+                                    <li><a class="dropdown-item" href="#">Workshop</a></li>
+                                    <li><a class="dropdown-item" href="#">Mercado</a></li>
+                                    <li><a class="dropdown-item" href="#">Retransmisiones</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" id="nav-acerca" href="acerca.html">Acerca de</a></li>
+                            <li class="nav-item"><a class="nav-link" id="nav-soporte" href="soporte.html">Soporte</a></li>
+                        </ul>
+                        
+                        <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
+                            <div class="d-flex align-items-center gap-3" id="sesion">
+                                <button class="small fw-bold text-uppercase btn btn-outline-light" onclick="Login()">Iniciar Sesion</button>
+                                <button class="btn-gamer" onclick="SignUp()">Registrarse</button>
+                            </div>
+
+                            <div class="d-none align-items-center gap-3" id="perfil">
+                                <div class="perfil-avatar" id="avatar-inicial">U</div>
+                                <span class="username-nav" id="nav-username">Usuario</span>
+                                <i class="bi bi-box-arrow-right btn-logout" onclick="Logout()" title="Cerrar Sesión" style="cursor: pointer;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>`;
+        document.body.insertAdjacentHTML('afterbegin', NavCom);
+        VerUsu();
+    });
+    document.addEventListener("DOMContentLoaded", function() {
     const ModCom = `
         <div class="modal fade" id="mComp" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -67,7 +118,7 @@
                         <label class="form-label lbl-general">Nombre Completo</label>
                         <input type="text" id="gen-nombre" class="form-control inputs" placeholder="Nombre">
                     </div>
-                    
+
                     <div class="mb-3">
                         <label class="form-label lbl-general">Correo Electrónico</label>
                         <input type="email" id="gen-correo" class="form-control inputs" placeholder="nombre@ejemplo.com">
@@ -123,7 +174,7 @@
         Swal.fire({
             title: '¡Próximamente!',
             text: `Dentro de poco agregaremos más juegos a nuestro catálogo`,
-            imageUrl: 'prox.png',
+            imageUrl: '../Games/Images/prox.png',
             imageWidth: 200,
             imageHeight: 200,
             customClass:{
@@ -135,27 +186,48 @@
         });
     }
 
-    function Login() {
+    const regexUs = /^[a-zA-Z0-9._-]{3,16}$/;
+    const regexCor = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    function VerUsu() {
+        const ActivUs = localStorage.getItem("ActivUs");
+        const divSesion = document.getElementById("sesion");
+        const divPerfil = document.getElementById("perfil");
+        if (ActivUs) {
+            divSesion.classList.add("d-none");
+            divSesion.classList.remove("d-flex");            
+            divPerfil.classList.remove("d-none");
+            divPerfil.classList.add("d-flex");
+            document.getElementById("nav-username").innerText = ActivUs;
+            document.getElementById("avatar-inicial").innerText = ActivUs.charAt(0).toUpperCase();
+        } else {
+            divSesion.classList.remove("d-none");
+            divSesion.classList.add("d-flex");            
+            divPerfil.classList.add("d-none");
+            divPerfil.classList.remove("d-flex");
+        }
+    }
+
+    function SignUp() {
         Swal.fire({
-            title: 'INICIAR SESIÓN',
+            title: 'REGISTRARSE (SIGN UP)',
             html: `
                 <div class="text-start px-1 gen">
                     <div class="mb-3">
                         <label class="form-label lbl-general">Nombre de Usuario</label>
-                        <input type="text" id="log-usuario" class="form-control inputs" placeholder="Ej. Raynor">
+                        <input type="text" id="reg-usuario" class="form-control inputs" placeholder="Ej. Raynor">
                     </div>
                     <div class="mb-3">
                         <label class="form-label lbl-general">Correo Electrónico</label>
-                        <input type="email" id="log-correo" class="form-control inputs" placeholder="Ej. nombre@correo.com">
+                        <input type="email" id="reg-correo" class="form-control inputs" placeholder="Ej. nombre@correo.com">
                     </div>
                     <div class="mb-3">
                         <label class="form-label lbl-general">Contraseña</label>
-                        <input type="password" id="log-clave" class="form-control inputs" placeholder="••••••••">
+                        <input type="password" id="reg-clave" class="form-control inputs" placeholder="••••••••">
                     </div>
-                    
                     <div class="form-check mt-3">
-                        <input class="form-check-input" type="checkbox" id="log-terminos" style="cursor:pointer;">
-                        <label class="form-check-label small text-white-50" for="log-terminos" style="cursor:pointer; font-size: 12px;">
+                        <input class="form-check-input" type="checkbox" id="reg-terminos" style="cursor:pointer;">
+                        <label class="form-check-label small text-white-50" for="reg-terminos" style="cursor:pointer; font-size: 12px;">
                             Acepto los términos, condiciones y políticas de privacidad.
                         </label>
                     </div>
@@ -170,46 +242,82 @@
             },
             buttonsStyling: false,
             showCancelButton: true,
-            confirmButtonText: 'SIGUIENTE',
+            confirmButtonText: 'REGISTRAR',
             cancelButtonText: 'CANCELAR',
             focusConfirm: false,
             preConfirm: () => {
-                const usuario = Swal.getPopup().querySelector('#log-usuario').value.trim();
-                const correo = Swal.getPopup().querySelector('#log-correo').value.trim();
-                const clave = Swal.getPopup().querySelector('#log-clave').value.trim();
-                const terminos = Swal.getPopup().querySelector('#log-terminos').checked;
+                const usuario = Swal.getPopup().querySelector('#reg-usuario').value.trim();
+                const correo = Swal.getPopup().querySelector('#reg-correo').value.trim();
+                const clave = Swal.getPopup().querySelector('#reg-clave').value.trim();
+                const terminos = Swal.getPopup().querySelector('#reg-terminos').checked;
+            
                 if (!usuario || !clave || !correo) {
                     Swal.showValidationMessage('Por favor, completa todos los campos.');
                     return false;
                 }
                 if (!terminos) {
-                    Swal.showValidationMessage('Debes aceptar los términos y condiciones para continuar.');
+                    Swal.showValidationMessage('Debes aceptar los términos y condiciones.');
                     return false;
                 }
-                return { usuario: usuario, clave: clave };
+                if (clave.length < 8) {
+                    Swal.showValidationMessage("La contraseña debe tener un mínimo de 8 caracteres");
+                    return false;
+                }
+                if (!regexUs.test(usuario)) {
+                    Swal.showValidationMessage("El usuario debe tener de 3 a 16 caracteres y no contener espacios.");
+                    return false;
+                }
+                if (!regexCor.test(correo)) {
+                    Swal.showValidationMessage("Ingrese un correo válido");
+                    return false;
+                }
+                if (/^[^0-9]+$/.test(clave)) {
+                    Swal.showValidationMessage("La contraseña debe incluir al menos un número");
+                    return false;
+                }
+                if (/^[^a-z]+$/.test(clave)) {
+                    Swal.showValidationMessage("La contraseña debe incluir al menos una letra minúscula");
+                    return false;
+                }
+                if (/^[^A-Z]+$/.test(clave)) {
+                    Swal.showValidationMessage("La contraseña debe incluir al menos una letra mayúscula");
+                    return false;
+                }
+                if (/^[^!@#$%^&*(),.?":{}|<>_+-]+$/.test(clave)) {
+                    Swal.showValidationMessage("La contraseña debe incluir al menos un carácter especial");
+                    return false;
+                }  
+                return { usuario, correo, clave };
             }
         }).then((result) => {
             if (result.isConfirmed) {
-                SignUp(result.value);
+                localStorage.setItem("NuevoUser", JSON.stringify(result.value));                
+                Swal.fire({
+                    title: '¡REGISTRO EXITOSO!',
+                    text: 'Tu cuenta ha sido creada. Ahora puedes iniciar sesión.',
+                    icon: 'success',
+                    background: '#1A0F2E',
+                    color: '#00FFAE',
+                    confirmButtonColor: '#FF4757'
+                }).then(() => {
+                    Login();
+                });
             }
         });
     }
-    function SignUp(DatLog) {
+
+    function Login() {
         Swal.fire({
-            title: 'VERIFICACIÓN DE REGISTRO (SIGN UP)',
+            title: 'INICIAR SESIÓN',
             html: `
                 <div class="text-start px-1 gen">
-                    <p class="text-white-50 small mb-3 text-center" style="font-size:12px;">
-                        Por seguridad, repite tus credenciales para confirmar la creación de tu cuenta.
-                    </p>
                     <div class="mb-3">
-                        <label class="form-label lbl-general">Confirmar Usuario</label>
-                        <input type="text" id="sign-usuario" class="form-control inputs" placeholder="Repite tu usuario">
+                        <label class="form-label lbl-general">Nombre de Usuario</label>
+                        <input type="text" id="log-usuario" class="form-control inputs" placeholder="Ingresa tu usuario">
                     </div>
-                    
                     <div class="mb-3">
-                        <label class="form-label lbl-general">Confirmar Contraseña</label>
-                        <input type="password" id="sign-clave" class="form-control inputs" placeholder="Repite tu contraseña">
+                        <label class="form-label lbl-general">Contraseña</label>
+                        <input type="password" id="log-clave" class="form-control inputs" placeholder="Ingresa tu contraseña">
                     </div>
                 </div>
             `,
@@ -222,36 +330,62 @@
             },
             buttonsStyling: false,
             showCancelButton: true,
-            confirmButtonText: 'REGISTRAR',
-            cancelButtonText: 'ATRÁS',
+            confirmButtonText: 'INGRESAR',
+            cancelButtonText: 'CANCELAR',
             focusConfirm: false,
             preConfirm: () => {
-                const User = Swal.getPopup().querySelector('#sign-usuario').value.trim();
-                const Pass = Swal.getPopup().querySelector('#sign-clave').value.trim();
+                const user = Swal.getPopup().querySelector('#log-usuario').value.trim();
+                const pass = Swal.getPopup().querySelector('#log-clave').value.trim();
+                if (!user || !pass) {
+                    Swal.showValidationMessage('Por favor, rellene ambos campos.');
+                    return false;
+                }
+                const User = JSON.parse(localStorage.getItem("NuevoUser"));
 
-                if (!User || !Pass) {
-                    Swal.showValidationMessage('Por favor, rellene ambos campos de confirmación.');
+                if (!User || User.usuario.toLowerCase() !== user.toLowerCase() || User.clave !== pass) {
+                    Swal.showValidationMessage('Usuario o contraseña incorrectos.');
                     return false;
                 }
-                if (User !== DatLog.usuario || Pass !== DatLog.clave) {
-                    Swal.showValidationMessage('Los datos no coinciden, por favor revíselos');
-                    return false;
-                }
-                return { usuario: User };
+                return { usuario: User.usuario };
             }
         }).then((result) => {
             if (result.isConfirmed) {
+                localStorage.setItem("ActivUs", result.value.usuario);                
                 Swal.fire({
-                    title: '¡CUENTA CREADA!',
-                    text: `Bienvenido a nuestra tienda ${result.value.usuario.toUpperCase()}.`,
+                    title: '¡BIENVENIDO!',
+                    text: `Hola de nuevo, ${result.value.usuario.toUpperCase()}.`,
                     icon: 'success',
                     background: '#1A0F2E',
                     color: '#00FFAE',
                     confirmButtonColor: '#FF4757'
+                }).then(() => {
+                    VerUsu();
                 });
-            } else if (result.isDismissed && Swal.DismissReason.cancel) {
-                Login();
-            }
+            } 
+        });
+    }
+
+    function Logout() {
+        Swal.fire({
+            title: 'CERRAR SESIÓN',
+            text: `¿Estás seguro de cerrar sesión?`,
+            icon: 'info',
+            background: '#1A0F2E',
+            color: '#00FFAE',
+            showCancelButton: true,
+            confirmButtonText: 'CONTINUAR',
+            cancelButtonText: 'CANCELAR',
+            customClass: {
+                title: 'tit-general',
+                icon: 'ico',
+                confirmButton: 'btn-pri',
+                cancelButton: 'btn-sec'
+            },
+        }).then((result) => {
+            if(result.isConfirmed){
+                localStorage.removeItem("ActivUs");
+                VerUsu();
+            }            
         });
     }
 
