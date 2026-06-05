@@ -8,21 +8,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="personalStyles/EstilosNuevos.css" >
     <link rel="stylesheet" href="personalStyles/juegosRo.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
-    <header>
-        <h1>navbar</h1>
-    </header>
     <!--hero pvz-->
     <section class="hero-pvz">
         <div class=" container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
-                    <h1 class="fw-bold mb-4" style="font-size: 2.5rem;">
-                        PLANTS VS. ZOMBIES
-                    </h1>
+                <div class="col-lg-6 align-items-center-lg text-lg-start mb-5 mb-lg-0">
+                    <div class="col-lg-9 col-md-5 mb-3">
+                        <img style="height: 1%;"
+                            src="https://static.wikia.nocookie.net/plantsvszombies/images/0/01/Pvz_logo_stacked_rgb.png/revision/latest?cb=20150520132615"
+                            class="img-fluid">
+                    </div>
                     <p class="lead mb-4 opacity-90 small"
                         style="font-size: 0.85rem; line-height: 1.6; letter-spacing: 0.5px;">
                         ¡Los zombis están invadiendo tu jardín! Defiende tu hogar usando un arsenal de plantas únicas.
@@ -30,9 +31,9 @@
                         defensa de torres.
                     </p>
                     <div class="d-grid gap-3 d-sm-flex justify-content-center justify-content-lg-start">
-                        <a href="#carrito" class="btn btn-warning btn-lg px-4 fw-bold text-dark"
+                        <a href="#carrito" class="btn btn-warning btn-lg px-4 fw-bold text-dark" onclick="Comprar(4.99)"
                             style="font-size: 0.8rem;">
-                            comprar
+                            Comprar ya
                         </a>
                         <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#videoModal">
                             ver tráiler
@@ -292,6 +293,7 @@
             </div>
         </div>
     </div>
+    <script src="../scripts/funciones.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
