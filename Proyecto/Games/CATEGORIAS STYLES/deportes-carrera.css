@@ -1,0 +1,556 @@
+@charset 'utf-8';
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+      background:linear-gradient(to top , rgb(82, 50, 21),rgb(129, 67, 17) );
+}
+.text-center.p-5{
+    font-weight: bold;
+    color: aliceblue;
+}
+.carousel-item img{
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+
+}
+.carousel-caption{
+    top:50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+    text-align: center;
+}
+h1{
+    background-color: rgb(94, 62, 35);
+    box-shadow: 0px 0px 2rem black;
+}
+.carousel-item{
+    background-color: rgb(30, 17, 65);
+}
+.card{
+    height: 35rem;
+    transition: 0.5s;
+    color:aliceblue;
+    border-radius: 2rem;
+    border: none;
+     box-shadow: 0px 0px 3rem rgb(1, 10, 14) !important;
+}
+.card-text{
+    padding-top: 1rem;
+    display: none;
+}
+.titulo-hover{
+    display: none;
+}
+.card:hover{
+    box-shadow: 0px 0px 3rem rgb(255, 118, 6) !important;
+    transform: translateY(-1rem);
+    z-index: 2;
+}
+.card-body{
+    background: linear-gradient(to left, rgb(126, 86, 34),rgb(201, 124, 8));
+    border-bottom-left-radius:2rem ;
+    border-bottom-right-radius:2rem ;
+    
+}
+.datos{
+    display: none;
+}
+.fondo1{
+    background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202406/1122/7a3b10ed3abad7f4f23f7f148e7e48e78e2cc8dc0c541090.png');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo1:hover .card-text{
+    display: block;
+}
+.fondo1:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo1:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo1:hover{
+    height:70% ;
+}
+.fondo1:hover .autor, .fondo1:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo1:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://image.api.playstation.com/vulcan/ap/rnd/202406/1122/7a3b10ed3abad7f4f23f7f148e7e48e78e2cc8dc0c541090.png');
+}
+span.hash{
+    margin: 0rem 0.2rem;
+    background-color: rgb(218, 132, 4);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+span.precio{
+    margin-top: 0.8rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.btn{
+    background-color: rgb(245, 150, 26);
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 2rem;
+      border-radius: 1rem;
+    box-shadow: 0px 0px 1rem rgb(255, 251, 22);   
+}
+.btn:hover{
+    background-color: rgb(0, 60, 255);
+     box-shadow: 0px 0px 1rem rgb(9, 51, 143);
+  
+}
+div.compra{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.card-title{
+    margin-bottom: 1rem;
+}
+.btn.boton-final:hover{
+    color:aliceblue;
+}
+/* fondo2*/
+.fondo2{
+    background-image: url('https://assetsio.gnwcdn.com/Forza-Horizon-5-PS5-Date_02-27-25.jpg?width=690&quality=85&format=jpg&dpr=3&auto=webp');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo2:hover .card-text{
+    display: block;
+}
+.fondo2:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo2:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo2:hover{
+    height:70% ;
+}
+.fondo2:hover .autor, .fondo2:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo2:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assetsio.gnwcdn.com/Forza-Horizon-5-PS5-Date_02-27-25.jpg?width=690&quality=85&format=jpg&dpr=3&auto=webp');
+}
+
+/*fondo3*/
+.fondo3{
+    background-image: url('https://www.autohebdo.fr/app/uploads/2022/03/4XvCkg4arwf6C8Si9nnSgZ-1200-80.jpg');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo3:hover .card-text{
+    display: block;
+}
+.fondo3:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo3:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo3:hover{
+    height:70% ;
+}
+.fondo3:hover .autor, .fondo3:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo3:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://www.autohebdo.fr/app/uploads/2022/03/4XvCkg4arwf6C8Si9nnSgZ-1200-80.jpg');
+}
+/*fondo4*/
+.fondo4{
+    background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202306/2609/278035a1f94e3a07d4d0f74cd61b987af14a833b65a56cd2.png');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo4:hover .card-text{
+    display: block;
+}
+.fondo4:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo4:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo4:hover{
+    height:70% ;
+}
+.fondo4:hover .autor, .fondo4:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo4:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://image.api.playstation.com/vulcan/ap/rnd/202306/2609/278035a1f94e3a07d4d0f74cd61b987af14a833b65a56cd2.png');
+}
+/*fondo5*/
+.fondo5{
+    background-image: url('https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/articles/launch-article/f123-launch-article-featured-16x9.jpg.adapt.crop191x100.628p.jpg');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo5:hover .card-text{
+    display: block;
+}
+.fondo5:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo5:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo5:hover{
+    height:70% ;
+}
+.fondo5:hover .autor, .fondo5:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo5:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://media.contentapi.ea.com/content/dam/ea/f1/f1-23/common/articles/launch-article/f123-launch-article-featured-16x9.jpg.adapt.crop191x100.628p.jpg');
+}
+/*fondo6*/
+.fondo6{
+    background-image: url('https://traxion.gg/wp-content/uploads/2025/07/25-1920x1080-1.jpeg');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo6:hover .card-text{
+    display: block;
+}
+.fondo6:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo6:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo6:hover{
+    height:70% ;
+}
+.fondo6:hover .autor, .fondo6:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo6:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://traxion.gg/wp-content/uploads/2025/07/25-1920x1080-1.jpeg');
+}
+/*fondo7*/
+.fondo7{
+    background-image: url('https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/en_US/articles/2025/tony-hawks-pro-skater-3-4-is-coming-down-the-halfpipe/tonyhawk_proskater_3_4');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo7:hover .card-text{
+    display: block;
+}
+.fondo7:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo7:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo7:hover{
+    height:70% ;
+}
+.fondo7:hover .autor, .fondo7:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo7:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/en_US/articles/2025/tony-hawks-pro-skater-3-4-is-coming-down-the-halfpipe/tonyhawk_proskater_3_4');
+}
+/*fondo8*/
+.fondo8{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYqXcxSSG21-oYb8JCz4-8EtCEV__N-NpXpA&s');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo8:hover .card-text{
+    display: block;
+}
+.fondo8:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo8:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo8:hover{
+    height:70% ;
+}
+.fondo8:hover .autor, .fondo8:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo8:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYqXcxSSG21-oYb8JCz4-8EtCEV__N-NpXpA&s');
+}
+/*fondo9*/
+.fondo9{
+    background-image: url('https://s25.q4cdn.com/103200307/files/doc_multimedia/MAD24_Deluxe_16x9.jpg');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo9:hover .card-text{
+    display: block;
+}
+.fondo9:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo9:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo9:hover{
+    height:70% ;
+}
+.fondo9:hover .autor, .fondo9:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo9:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://s25.q4cdn.com/103200307/files/doc_multimedia/MAD24_Deluxe_16x9.jpg');
+}
+/*fondo10*/
+.fondo10{
+    background-image: url('https://tierragamer.com/wp-content/uploads/2024/02/WWE-2K24-Showcase.webp');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo10:hover .card-text{
+    display: block;
+}
+.fondo10:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo10:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo10:hover{
+    height:70% ;
+}
+.fondo10:hover .autor, .fondo10:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo10:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://tierragamer.com/wp-content/uploads/2024/02/WWE-2K24-Showcase.webp');
+}
+/*fondo11*/
+.fondo11{
+    background-image: url('https://i.ytimg.com/vi/qhI0OZG02Dw/maxresdefault.jpg');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo11:hover .card-text{
+    display: block;
+}
+.fondo11:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo11:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo11:hover{
+    height:70% ;
+}
+.fondo11:hover .autor, .fondo11:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo11:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i.ytimg.com/vi/qhI0OZG02Dw/maxresdefault.jpg');
+}
+/*fondo12*/
+.fondo12{
+    background-image: url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6slI1F16TphazzYNlyHP4n/a8fdb495642078cd2daed4fab60edb26/MPP_JamSessions_desktop-V3.jpg');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo12:hover .card-text{
+    display: block;
+}
+.fondo12:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo12:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo12:hover{
+    height:70% ;
+}
+.fondo12:hover .autor, .fondo12:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo12:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6slI1F16TphazzYNlyHP4n/a8fdb495642078cd2daed4fab60edb26/MPP_JamSessions_desktop-V3.jpg');
+}
+@media( min-width: 768px ){
+    .carousel-item img{
+        height: 80vh;
+        object-fit: cover;
+    object-position: center;
+    }
+    .fondo1{
+    height: 70%;
+    }
+    span.hash{
+        display: inline;
+        width: 100%;
+    }
+    /* demas fondos*/
+    .fondo2{
+    height: 70%;
+    }
+    .fondo3{
+    height: 70%;
+    }
+     .fondo4{
+    height: 70%;
+    }
+     .fondo5{
+    height: 70%;
+    }
+     .fondo6{
+    height: 70%;
+    }
+     .fondo7{
+    height: 70%;
+    }
+     .fondo8{
+    height: 70%;
+    }
+     .fondo9{
+    height: 70%;
+    }
+     .fondo10{
+    height: 70%;
+    }
+     .fondo11{
+    height: 70%;
+    }
+     .fondo12{
+    height: 70%;
+    }
+
+}
