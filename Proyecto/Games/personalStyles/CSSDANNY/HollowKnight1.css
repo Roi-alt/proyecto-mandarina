@@ -1,0 +1,40 @@
+@charset 'utf-8';
+.item-card-1{
+    background-image: url('https://m.media-amazon.com/images/I/A1SrTCQwv6L._SX412_QL90_FMwebp_.png');
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    
+}
+.item-card-2{
+    background-image: url('https://cdna.artstation.com/p/assets/covers/images/033/952/956/large/andi-arts-andi-arts-presen2.jpg?1611005653');
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    background-size: contain;
+    
+}
+.item-card-3{
+    background-image: url('https://pbs.twimg.com/media/E6l2wfgWYAEYqn7.jpg');
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    background-position: center;
+    background-size: cover;
+    
+}
+.item-card-4{
+    background-image: url('https://i.ytimg.com/vi/Eja-07KIS5M/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDVgyKYUq-m1V07eiNvPG3dpk68uw');
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    background-color: rgb(15, 27, 58);
+    color:aliceblue;
+    padding-top: 2rem;
+}
