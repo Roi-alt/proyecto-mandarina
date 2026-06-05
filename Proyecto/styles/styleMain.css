@@ -202,6 +202,7 @@ body {
     border-bottom: 2px solid #2d2d35;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
+
 .navbar-brand {
     letter-spacing: 1px;
     text-shadow: 0 0 10px rgba(25, 135, 84, 0.4);
@@ -227,12 +228,14 @@ body {
     border-radius: 6px;
     padding: 8px 0;
 }
+
 .dropdown-menu-dark .dropdown-item {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
     padding: 8px 20px;
     transition: all 0.2s ease;
 }
+
 .dropdown-menu-dark .dropdown-item:hover {
     background-color: #251046;
     color: #198754;
@@ -244,6 +247,7 @@ body {
     opacity: 1;
     margin: 6px 0;
 }
+
 .navbar-dark .navbar-nav .nav-link.dropdown-toggle::after {
     transition: transform 0.3s ease;
 }
@@ -256,20 +260,43 @@ body {
                         FOOTER                           
 ***********************************************************/
 .site-footer {
-    background-color: #150830;
+    background-color: #1a0933;
     border-top: 2px solid #2d1254;
     box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
 }
 
-.footer-links a {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+/* Títulos pequeños con separación de letras estilo gaming */
+.tracking-wider {
+    letter-spacing: 1px;
 }
 
-/* Efecto hover con el verde de tu marca */
-.footer-links a:hover {
-    color: #198754;
+/* Estilos de las listas de enlaces */
+.footer-menu a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.footer-menu a:hover {
+    color: #00FFAE;
+    /* Cambia a verde al pasar el cursor */
+    padding-left: 4px;
+    /* Leve empuje hacia la derecha */
+}
+
+/* Estilos de los botones de Redes Sociales */
+.redes-sociales .btn {
+    border-color: #2d1254;
+    background-color: #251046;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.redes-sociales .btn:hover {
+    background-color: transparent;
+    border-color: #00FFAE;
+    color: #00FFAE;
+    box-shadow: 0 0 10px rgba(30, 128, 82, 0.4);
+    transform: translateY(-2px);
 }
