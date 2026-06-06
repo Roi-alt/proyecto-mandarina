@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="container-fluid">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/036/218/371/small/ai-generated-futuristic-blue-robot-playing-virtual-reality-games-generated-by-ai-free-photo.jpg"
                         alt="Logo" style="width: 50px; height: 50px; object-fit: cover;" class="me-2 rounded">
-                    <a class="navbar-brand fw-bold" href="../../main.html">PAPUJUEGOS</a>
+                    <a class="navbar-brand fw-bold" href="../../index.html">PAPUJUEGOS</a>
                     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navContent">
                         <span class="navbar-toggler-icon"></span>
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     <div class="collapse navbar-collapse" id="navContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" id="nav-tienda" href="../../main.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" id="nav-tienda" href="../../index.html">Home</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
