@@ -1,0 +1,556 @@
+@charset 'utf-8';
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+      background:linear-gradient(to top , rgb(3, 24, 37),rgb(17, 88, 129) );
+}
+.text-center.p-5{
+    font-weight: bold;
+    color: aliceblue;
+}
+.carousel-item img{
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+
+}
+.carousel-caption{
+    top:50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+    text-align: center;
+}
+h1{
+    background-color: rgb(6, 145, 180);
+    box-shadow: 0px 0px 2rem black;
+}
+.carousel-item{
+    background-color: rgb(30, 17, 65);
+}
+.card{
+    height: 35rem;
+    transition: 0.5s;
+    color:aliceblue;
+    border-radius: 2rem;
+    border: none;
+     box-shadow: 0px 0px 3rem rgb(1, 10, 14) !important;
+}
+.card-text{
+    padding-top: 1rem;
+    display: none;
+}
+.titulo-hover{
+    display: none;
+}
+.card:hover{
+    box-shadow: 0px 0px 3rem rgb(6, 176, 255) !important;
+    transform: translateY(-1rem);
+    z-index: 2;
+}
+.card-body{
+    background: linear-gradient(to left, rgb(23, 51, 83),rgb(5, 111, 153));
+    border-bottom-left-radius:2rem ;
+    border-bottom-right-radius:2rem ;
+    
+}
+.datos{
+    display: none;
+}
+.fondo1{
+    background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo1:hover .card-text{
+    display: block;
+}
+.fondo1:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo1:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo1:hover{
+    height:70% ;
+}
+.fondo1:hover .autor, .fondo1:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo1:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5');
+}
+span.hash{
+    margin: 0rem 0.2rem;
+    background-color: rgb(59, 182, 182);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+span.precio{
+    margin-top: 0.8rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.btn{
+    background-color: rgb(94, 216, 216);
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 2rem;
+      border-radius: 1rem;
+    box-shadow: 0px 0px 1rem rgb(0, 204, 255);   
+}
+.btn:hover{
+    background-color: rgb(0, 60, 255);
+     box-shadow: 0px 0px 1rem rgb(9, 51, 143);
+  
+}
+div.compra{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.card-title{
+    margin-bottom: 1rem;
+}
+.btn.boton-final:hover{
+    color:aliceblue;
+}
+/* fondo2*/
+.fondo2{
+    background-image: url('https://support.activision.com/content/dam/atvi/support/article-assets/embedded-images/crash-4/CB4-KEYART.jpg');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo2:hover .card-text{
+    display: block;
+}
+.fondo2:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo2:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo2:hover{
+    height:70% ;
+}
+.fondo2:hover .autor, .fondo2:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo2:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://support.activision.com/content/dam/atvi/support/article-assets/embedded-images/crash-4/CB4-KEYART.jpg');
+}
+
+/*fondo3*/
+.fondo3{
+    background-image: url('https://nintenduo.com/wp-content/uploads/2022/07/Ventas-DLC-Cuphead-Final-01.webp');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo3:hover .card-text{
+    display: block;
+}
+.fondo3:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo3:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo3:hover{
+    height:70% ;
+}
+.fondo3:hover .autor, .fondo3:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo3:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://nintenduo.com/wp-content/uploads/2022/07/Ventas-DLC-Cuphead-Final-01.webp');
+}
+/*fondo4*/
+.fondo4{
+    background-image: url('https://news.xbox.com/es-latam/wp-content/uploads/sites/4/SMB3D-8967fb8fdaffc0aa39d5-a9a89e7bb50bd7c19c4d.jpg');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo4:hover .card-text{
+    display: block;
+}
+.fondo4:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo4:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo4:hover{
+    height:70% ;
+}
+.fondo4:hover .autor, .fondo4:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo4:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://news.xbox.com/es-latam/wp-content/uploads/sites/4/SMB3D-8967fb8fdaffc0aa39d5-a9a89e7bb50bd7c19c4d.jpg');
+}
+/*fondo5*/
+.fondo5{
+    background-image: url('https://empepinao86.es/wp-content/uploads/2022/09/qeqe.png');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo5:hover .card-text{
+    display: block;
+}
+.fondo5:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo5:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo5:hover{
+    height:70% ;
+}
+.fondo5:hover .autor, .fondo5:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo5:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://empepinao86.es/wp-content/uploads/2022/09/qeqe.png');
+}
+/*fondo6*/
+.fondo6{
+    background-image: url('https://nintenduo.com/wp-content/uploads/2026/06/Rayman-Legends-Retold-nth-hero-webp.webp');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo6:hover .card-text{
+    display: block;
+}
+.fondo6:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo6:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo6:hover{
+    height:70% ;
+}
+.fondo6:hover .autor, .fondo6:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo6:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://nintenduo.com/wp-content/uploads/2026/06/Rayman-Legends-Retold-nth-hero-webp.webp');
+}
+/*fondo7*/
+.fondo7{
+    background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000049281/e7200824041808289d4a65589ed368f7e08dc2e538a5fd7ee9f8d39e58015c24');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo7:hover .card-text{
+    display: block;
+}
+.fondo7:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo7:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo7:hover{
+    height:70% ;
+}
+.fondo7:hover .autor, .fondo7:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo7:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000049281/e7200824041808289d4a65589ed368f7e08dc2e538a5fd7ee9f8d39e58015c24');
+}
+/*fondo8*/
+.fondo8{
+    background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250760/capsule_616x353.jpg?t=1780266579');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo8:hover .card-text{
+    display: block;
+}
+.fondo8:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo8:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo8:hover{
+    height:70% ;
+}
+.fondo8:hover .autor, .fondo8:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo8:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250760/capsule_616x353.jpg?t=1780266579');
+}
+/*fondo9*/
+.fondo9{
+    background-image: url('https://assets.doublefine.com/images/screenshots/Psychonauts-2/Psychonauts-2-Screenshot-Brain-in-a-Jar-10-Levitation-Ball.jpeg');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo9:hover .card-text{
+    display: block;
+}
+.fondo9:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo9:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo9:hover{
+    height:70% ;
+}
+.fondo9:hover .autor, .fondo9:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo9:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.doublefine.com/images/screenshots/Psychonauts-2/Psychonauts-2-Screenshot-Brain-in-a-Jar-10-Levitation-Ball.jpeg');
+}
+/*fondo10*/
+.fondo10{
+    background-image: url('https://static.bandainamcoent.eu/high/little-nightmares/little-nightmares-2/00-page-setup/ln2_game-thumbnail.jpg');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo10:hover .card-text{
+    display: block;
+}
+.fondo10:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo10:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo10:hover{
+    height:70% ;
+}
+.fondo10:hover .autor, .fondo10:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo10:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://static.bandainamcoent.eu/high/little-nightmares/little-nightmares-2/00-page-setup/ln2_game-thumbnail.jpg');
+}
+/*fondo11*/
+.fondo11{
+    background-image: url('https://i.blogs.es/442f82/020119-celeste/1366_2000.jpg');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo11:hover .card-text{
+    display: block;
+}
+.fondo11:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo11:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo11:hover{
+    height:70% ;
+}
+.fondo11:hover .autor, .fondo11:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo11:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i.blogs.es/442f82/020119-celeste/1366_2000.jpg');
+}
+/*fondo12*/
+.fondo12{
+    background-image: url('https://static.wikia.nocookie.net/oriandtheblindforest/images/4/4c/DhI4ZfmVMAAGxb8.jpg/revision/latest?cb=20180815223720');
+    height: 50%;
+    padding: 1rem;
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius:2rem ;
+    border-top-right-radius:2rem ;
+    transition: 2s;
+    background-position: center;
+    
+}
+.fondo12:hover .card-text{
+    display: block;
+}
+.fondo12:hover .titulo-hover{
+    display: block;
+    padding-top: 1rem;
+}
+.fondo12:hover .datos{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fondo12:hover{
+    height:70% ;
+}
+.fondo12:hover .autor, .fondo12:hover .fecha{
+    flex:1 1  50%;
+}
+.fondo12:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://static.wikia.nocookie.net/oriandtheblindforest/images/4/4c/DhI4ZfmVMAAGxb8.jpg/revision/latest?cb=20180815223720');
+}
+@media( min-width: 768px ){
+    .carousel-item img{
+        height: 80vh;
+        object-fit: cover;
+    object-position: center;
+    }
+    .fondo1{
+    height: 70%;
+    }
+    span.hash{
+        display: inline;
+        width: 100%;
+    }
+    /* demas fondos*/
+    .fondo2{
+    height: 70%;
+    }
+    .fondo3{
+    height: 70%;
+    }
+     .fondo4{
+    height: 70%;
+    }
+     .fondo5{
+    height: 70%;
+    }
+     .fondo6{
+    height: 70%;
+    }
+     .fondo7{
+    height: 70%;
+    }
+     .fondo8{
+    height: 70%;
+    }
+     .fondo9{
+    height: 70%;
+    }
+     .fondo10{
+    height: 70%;
+    }
+     .fondo11{
+    height: 70%;
+    }
+     .fondo12{
+    height: 70%;
+    }
+
+}
