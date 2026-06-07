@@ -1,0 +1,270 @@
+/***********************************************************/
+/*                 DELTARUNE ESTILOS                       */
+/***********************************************************/
+main {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #172870;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1e8449;
+}
+
+.carousel-item {
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fondo-deltarune {
+    position: relative;
+    background-color: #1a0f2e;
+    overflow: hidden;
+}
+
+.fondo-deltarune::before {
+    background-attachment: fixed;
+    /* Esto crea el efecto profundidad */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/162/583/708/deltarune-dark-world-pixel-art-stars-castle-hd-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.fondo-deltarune>div {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-deltarune {
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(255, 51, 153, 0.226) 0%, transparent 40%),
+        /* Fucsia */
+        radial-gradient(circle at 90% 90%, rgba(0, 255, 204, 0.432) 0%, transparent 40%),
+        /* Cian */
+        linear-gradient(135deg, #190733 0%, #1a0933 100%);
+    color: antiquewhite
+}
+
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(173, 52, 230, 0.2);
+}
+
+.card {
+    transition: border 0.3s ease;
+}
+
+.card:hover {
+    border: 1px solid #0dcaf0 !important;
+    /* El color cian de Bootstrap */
+    box-shadow: 0 0 10px rgba(13, 202, 240, 0.5);
+}
+
+/* Ajustes para el acordeón */
+.accordion-button::after {
+    filter: invert(1) brightness(2);
+    /* Hace que la flecha del acordeón sea blanca */
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #0dcaf0;
+}
+
+.accordion-item {
+    border: 1px solid #0dcaf0 !important;
+    margin-bottom: 10px;
+}
+
+/* Suavizado de la apertura del acordeón */
+.accordion-collapse {
+    transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+
+/* Cuando el acordeón está abierto, Bootstrap le agrega la clase .show */
+.accordion-collapse.show {
+    opacity: 1;
+}
+
+/* Suavizado del botón al hacer click */
+.accordion-button {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/***********************************************************/
+/*                 MINECRAFT ESTILOS                       */
+/***********************************************************/
+.hero-minecraft {
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(126, 255, 51, 0.226) 0%, transparent 40%),
+        /* Fucsia */
+        radial-gradient(circle at 90% 90%, rgba(255, 123, 0, 0.432) 0%, transparent 40%),
+        /* Cian */
+        linear-gradient(135deg, #125438 0%, #09332c 100%);
+    color: antiquewhite
+}
+
+.fondo-minecraft {
+    position: relative;
+    background-color: #0f1d2e;
+    overflow: hidden;
+}
+
+.fondo-minecraft::before {
+    background-attachment: fixed;
+    /* Esto crea el efecto profundidad */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.redbull.com/images/c_crop,x_1015,y_0,h_1320,w_990/c_fill,w_450,h_600/q_auto,f_auto/redbullcom/2025/8/11/dcusojkfgapu4zxe3gtb/minecraft-landscape');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.fondo-minecraft>div {
+    position: relative;
+    z-index: 2;
+}
+
+.fondo-minecraft .btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fondo-minecraft .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(173, 52, 230, 0.2);
+}
+
+.fondo-minecraft .card {
+    transition: border 0.3s ease;
+}
+
+.fondo-minecraft .card:hover {
+    border: 1px solid #0df046 !important;
+    /* El color cian de Bootstrap */
+    box-shadow: 0 0 10px rgba(13, 240, 62, 0.5);
+}
+
+
+.fondo-minecraft .accordion-button:focus {
+    box-shadow: none;
+    border-color: #0df046;
+}
+
+.fondo-minecraft .accordion-item {
+    border: 1px solid #0df046 !important;
+    margin-bottom: 10px;
+}
+
+/***********************************************************/
+/*                 PLANTAS VS ZOMBIES ESTILOS              */
+/***********************************************************/
+.hero-pvz {
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(51, 255, 51, 0.322) 0%, transparent 40%),
+        /* Fucsia */
+        radial-gradient(circle at 90% 90%, rgba(255, 108, 23, 0.432) 0%, transparent 40%),
+        /* Cian */
+        linear-gradient(135deg, #125254 0%, #092b33 100%);
+    color: antiquewhite
+}
+
+.fondo-pvz {
+    position: relative;
+    background-color: #0f1d2e;
+    overflow: hidden;
+}
+
+.fondo-pvz::before {
+    background-attachment: fixed;
+    /* Esto crea el efecto profundidad */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/721/480/53/war-sunflower-plants-cactus-zombies-hd-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.fondo-pvz>div {
+    position: relative;
+    z-index: 2;
+}
+
+.fondo-pvz .btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fondo-pvz .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(173, 52, 230, 0.2);
+}
+
+.fondo-pvz .card {
+    transition: border 0.3s ease;
+}
+
+.fondo-pvz .card:hover {
+    border: 1px solid #f0ec0d !important;
+    /* El color cian de Bootstrap */
+    box-shadow: 0 0 10px rgba(240, 236, 13, 0.5);
+}
+
+
+.fondo-pvz .accordion-button:focus {
+    box-shadow: none;
+    border-color: #f0ec0d;
+}
+
+.fondo-pvz .accordion-item {
+    border: 1px solid #f0ec0d !important;
+    margin-bottom: 10px;
+}
