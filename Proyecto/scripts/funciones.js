@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" id="nav-acerca" href="#">Acerca de</a></li>
-                            <li class="nav-item"><a class="nav-link" id="nav-soporte" href="#">Soporte</a></li>
+                            <li class="nav-item"><a class="nav-link" id="nav-soporte" href="#" onclick="Contacto()">Soporte</a></li>
                         </ul>
                         
                         <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
@@ -168,6 +168,9 @@ function Comprar(precio) {
     var M = new bootstrap.Modal(ConMod);
     M.show();
 }
+const regexUs = /^[a-zA-Z0-9._-]{3,16}$/;
+const regexCor = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const regexNom = /^[A-Z][a-zñáéíóú]+$/;
 function Contacto() {
     Swal.fire({
         icon: 'info',
@@ -211,10 +214,14 @@ function Contacto() {
                 Swal.showValidationMessage('Por favor, completa todos los campos.');
                 return false;
             }
-            if (!correo.includes('@') || !correo.includes('.')) {
-                Swal.showValidationMessage('Por favor, ingresa un correo válido.');
+            if (!regexNom.test(nombre)) {
+                Swal.showValidationMessage("Ingrese un único nombre válido.");
                 return false;
             }
+            if (!regexCor.test(correo)) {
+                Swal.showValidationMessage("Por favor, ingresa un correo válido.");
+                return false;
+            }            
             return { nombre, correo, mensaje };
         }
     }).then((result) => {
@@ -230,24 +237,8 @@ function Contacto() {
         }
     });
 }
-function Prox() {
-    Swal.fire({
-        title: '¡Próximamente!',
-        text: `Dentro de poco agregaremos más juegos a nuestro catálogo`,
-        imageUrl: '../Games/Images/prox.png',
-        imageWidth: 200,
-        imageHeight: 200,
-        customClass: {
-            title: 'tit-general',
-        },
-        background: '#1A0F2E',
-        color: '#00FFAE',
-        confirmButtonColor: '#FF4757'
-    });
-}
 
-const regexUs = /^[a-zA-Z0-9._-]{3,16}$/;
-const regexCor = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 
 function VerUsu() {
     const ActivUs = localStorage.getItem("ActivUs");
@@ -456,7 +447,6 @@ function valfor(event) {
     const ci = document.getElementById('f-ci').value.trim();
     const tel = document.getElementById('f-tel').value.trim();
     const tarjeta = document.getElementById('f-tarjeta').value.trim();
-    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const regNum = /^[0-9]+$/;
     const regexCI = /^[0-9]{8}$/;
     const regexTel = /^[0-9]{7,8}$/;
@@ -464,7 +454,7 @@ function valfor(event) {
     errorDiv.style.display = 'none';
     errorDiv.innerText = '';
 
-    if (!regexEmail.test(correo)) {
+    if (!regexCor.test(correo)) {
         MosEr('Por favor, introduce un correo electrónico válido.');
         return;
     }
