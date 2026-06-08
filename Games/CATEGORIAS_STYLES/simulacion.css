@@ -4,7 +4,7 @@ html, body{
     overflow-x: hidden;
 }
 body{
-      background:linear-gradient(to top , rgb(3, 24, 37),rgb(17, 88, 129) );
+      background:linear-gradient(to top ,rgb(7, 53, 21), rgb(50, 92, 2) );
 }
 .text-center.p-5{
     font-weight: bold;
@@ -23,7 +23,7 @@ body{
     text-align: center;
 }
 h1{
-    background-color: rgb(6, 145, 180);
+    background-color: rgb(11, 92, 15);
     box-shadow: 0px 0px 2rem black;
 }
 .carousel-item{
@@ -35,7 +35,7 @@ h1{
     color:aliceblue;
     border-radius: 2rem;
     border: none;
-     box-shadow: 0px 0px 3rem rgb(1, 10, 14) !important;
+     box-shadow: 0px 0px 3rem rgb(3, 255, 58) !important;
 }
 .card-text{
     padding-top: 1rem;
@@ -45,12 +45,12 @@ h1{
     display: none;
 }
 .card:hover{
-    box-shadow: 0px 0px 3rem rgb(6, 176, 255) !important;
+    box-shadow: 0px 0px 3rem rgb(251, 255, 6) !important;
     transform: translateY(-1rem);
     z-index: 2;
 }
 .card-body{
-    background: linear-gradient(to left, rgb(23, 51, 83),rgb(5, 111, 153));
+    background: linear-gradient(to left, rgb(20, 75, 41),rgb(76, 155, 2));
     border-bottom-left-radius:2rem ;
     border-bottom-right-radius:2rem ;
     
@@ -59,7 +59,7 @@ h1{
     display: none;
 }
 .fondo1{
-    background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5');
+    background-image: url('https://assetsio.gnwcdn.com/Cities-Skylines-II_Key-Art-1024x540.png?width=690&quality=85&format=jpg&dpr=3&auto=webp');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -67,6 +67,7 @@ h1{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo1:hover .card-text{
@@ -85,14 +86,14 @@ h1{
     height:70% ;
 }
 .fondo1:hover .autor, .fondo1:hover .fecha{
-    flex:1 1  50%;
+    flex:1 1  50%;   
 }
 .fondo1:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assetsio.gnwcdn.com/Cities-Skylines-II_Key-Art-1024x540.png?width=690&quality=85&format=jpg&dpr=3&auto=webp');
 }
 span.hash{
     margin: 0rem 0.2rem;
-    background-color: rgb(59, 182, 182);
+    background-color: rgb(7, 194, 32);
     padding: 0.3rem;
     border-radius: 1rem;
     display: block;
@@ -106,16 +107,16 @@ span.precio{
     font-size: 1.2rem;
 }
 .btn{
-    background-color: rgb(94, 216, 216);
+    background-color: rgb(16, 231, 8);
     color: aliceblue;
     font-weight: bold;
     font-size: 2rem;
       border-radius: 1rem;
-    box-shadow: 0px 0px 1rem rgb(0, 204, 255);   
+    box-shadow: 0px 0px 1rem rgb(21, 255, 0);   
 }
 .btn:hover{
-    background-color: rgb(0, 60, 255);
-     box-shadow: 0px 0px 1rem rgb(9, 51, 143);
+    background-color: rgb(216, 238, 15);
+     box-shadow: 0px 0px 1rem rgb(251, 255, 0);
   
 }
 div.compra{
@@ -131,7 +132,7 @@ div.compra{
 }
 /* fondo2*/
 .fondo2{
-    background-image: url('https://support.activision.com/content/dam/atvi/support/article-assets/embedded-images/crash-4/CB4-KEYART.jpg');
+    background-image: url('https://flightsimulator.azureedge.net/wp-content/uploads/2021/10/MicrosoftFlightSimulator_GotY_KeyArt_Horiz_RGB_Final-1024x576.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -139,6 +140,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo2:hover .card-text{
@@ -160,12 +162,12 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo2:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://support.activision.com/content/dam/atvi/support/article-assets/embedded-images/crash-4/CB4-KEYART.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://flightsimulator.azureedge.net/wp-content/uploads/2021/10/MicrosoftFlightSimulator_GotY_KeyArt_Horiz_RGB_Final-1024x576.jpg');
 }
 
 /*fondo3*/
 .fondo3{
-    background-image: url('https://nintenduo.com/wp-content/uploads/2022/07/Ventas-DLC-Cuphead-Final-01.webp');
+    background-image: url('https://www.agriculture.com/thmb/Rf02sNlgxjtUhlxx4-KrCMbQTbg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FS22_Kubota-M8_en-2000-a01b649a19124fe387bc4f5aa56c5e3b.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -173,6 +175,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo3:hover .card-text{
@@ -194,11 +197,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo3:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://nintenduo.com/wp-content/uploads/2022/07/Ventas-DLC-Cuphead-Final-01.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://www.agriculture.com/thmb/Rf02sNlgxjtUhlxx4-KrCMbQTbg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FS22_Kubota-M8_en-2000-a01b649a19124fe387bc4f5aa56c5e3b.jpg');
 }
 /*fondo4*/
 .fondo4{
-    background-image: url('https://news.xbox.com/es-latam/wp-content/uploads/sites/4/SMB3D-8967fb8fdaffc0aa39d5-a9a89e7bb50bd7c19c4d.jpg');
+    background-image: url('https://assetsio.gnwcdn.com/euro-truck-simulator-2-ireland-expansion-01.jpg?width=690&quality=85&format=jpg&dpr=3&auto=webp');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -206,6 +209,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo4:hover .card-text{
@@ -227,11 +231,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo4:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://news.xbox.com/es-latam/wp-content/uploads/sites/4/SMB3D-8967fb8fdaffc0aa39d5-a9a89e7bb50bd7c19c4d.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assetsio.gnwcdn.com/euro-truck-simulator-2-ireland-expansion-01.jpg?width=690&quality=85&format=jpg&dpr=3&auto=webp');
 }
 /*fondo5*/
 .fondo5{
-    background-image: url('https://empepinao86.es/wp-content/uploads/2022/09/qeqe.png');
+    background-image: url('https://cms-cdn.zaonce.net/2024-07/pc2_announce_wide_1920x1080_feature.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -239,6 +243,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo5:hover .card-text{
@@ -260,11 +265,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo5:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://empepinao86.es/wp-content/uploads/2022/09/qeqe.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://cms-cdn.zaonce.net/2024-07/pc2_announce_wide_1920x1080_feature.jpg');
 }
 /*fondo6*/
 .fondo6{
-    background-image: url('https://nintenduo.com/wp-content/uploads/2026/06/Rayman-Legends-Retold-nth-hero-webp.webp');
+    background-image: url('https://media.vandal.net/m/76594/kerbal-space-program-2-202251710272145_1.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -272,6 +277,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo6:hover .card-text{
@@ -293,11 +299,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo6:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://nintenduo.com/wp-content/uploads/2026/06/Rayman-Legends-Retold-nth-hero-webp.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://media.vandal.net/m/76594/kerbal-space-program-2-202251710272145_1.jpg');
 }
 /*fondo7*/
 .fondo7{
-    background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000049281/e7200824041808289d4a65589ed368f7e08dc2e538a5fd7ee9f8d39e58015c24');
+    background-image: url('https://i0.wp.com/lavidaesunvideojuego.com/wp-content/uploads/2023/10/HouseFlipper2-sandbox-lavidaesunvideojuego.jpg?fit=1400%2C787&ssl=1');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -305,6 +311,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo7:hover .card-text{
@@ -326,11 +333,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo7:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000049281/e7200824041808289d4a65589ed368f7e08dc2e538a5fd7ee9f8d39e58015c24');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i0.wp.com/lavidaesunvideojuego.com/wp-content/uploads/2023/10/HouseFlipper2-sandbox-lavidaesunvideojuego.jpg?fit=1400%2C787&ssl=1');
 }
 /*fondo8*/
 .fondo8{
-    background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250760/capsule_616x353.jpg?t=1780266579');
+    background-image: url('https://i.ytimg.com/vi/4TQQe0ugV60/maxresdefault.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -338,6 +345,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo8:hover .card-text{
@@ -359,11 +367,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo8:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250760/capsule_616x353.jpg?t=1780266579');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i.ytimg.com/vi/4TQQe0ugV60/maxresdefault.jpg');
 }
 /*fondo9*/
 .fondo9{
-    background-image: url('https://assets.doublefine.com/images/screenshots/Psychonauts-2/Psychonauts-2-Screenshot-Brain-in-a-Jar-10-Levitation-Ball.jpeg');
+    background-image: url('https://gameinformer.com/sites/default/files/styles/content_header_l/public/2021/06/13/a4d31dfd/slimerancher2.jpg.webp');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -371,6 +379,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo9:hover .card-text{
@@ -392,11 +401,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo9:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.doublefine.com/images/screenshots/Psychonauts-2/Psychonauts-2-Screenshot-Brain-in-a-Jar-10-Levitation-Ball.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://gameinformer.com/sites/default/files/styles/content_header_l/public/2021/06/13/a4d31dfd/slimerancher2.jpg.webp');
 }
 /*fondo10*/
 .fondo10{
-    background-image: url('https://static.bandainamcoent.eu/high/little-nightmares/little-nightmares-2/00-page-setup/ln2_game-thumbnail.jpg');
+    background-image: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/107410/ss_e9220742c6b786efc9145c58ce7b276af891e9d5.1920x1080.jpg?t=1777566947');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -404,6 +413,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo10:hover .card-text{
@@ -425,11 +435,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo10:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://static.bandainamcoent.eu/high/little-nightmares/little-nightmares-2/00-page-setup/ln2_game-thumbnail.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/107410/ss_e9220742c6b786efc9145c58ce7b276af891e9d5.1920x1080.jpg?t=1777566947');
 }
 /*fondo11*/
 .fondo11{
-    background-image: url('https://i.blogs.es/442f82/020119-celeste/1366_2000.jpg');
+    background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1290000/page_bg_raw.jpg?t=1780392261');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -437,6 +447,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo11:hover .card-text{
@@ -458,11 +469,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo11:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i.blogs.es/442f82/020119-celeste/1366_2000.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1290000/page_bg_raw.jpg?t=1780392261');
 }
 /*fondo12*/
 .fondo12{
-    background-image: url('https://static.wikia.nocookie.net/oriandtheblindforest/images/4/4c/DhI4ZfmVMAAGxb8.jpg/revision/latest?cb=20180815223720');
+    background-image: url('https://m.media-amazon.com/images/I/91Mc+8DZaWL.png');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -470,6 +481,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo12:hover .card-text{
@@ -491,7 +503,7 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo12:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://static.wikia.nocookie.net/oriandtheblindforest/images/4/4c/DhI4ZfmVMAAGxb8.jpg/revision/latest?cb=20180815223720');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://m.media-amazon.com/images/I/91Mc+8DZaWL.png');
 }
 @media( min-width: 768px ){
     .carousel-item img{

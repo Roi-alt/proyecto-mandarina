@@ -4,7 +4,7 @@ html, body{
     overflow-x: hidden;
 }
 body{
-      background:linear-gradient(to top , rgb(3, 24, 37),rgb(17, 88, 129) );
+      background:linear-gradient(to top , rgb(19, 82, 73),rgb(6, 14, 22) );
 }
 .text-center.p-5{
     font-weight: bold;
@@ -23,7 +23,7 @@ body{
     text-align: center;
 }
 h1{
-    background-color: rgb(6, 145, 180);
+    background-color: rgb(13, 66, 87);
     box-shadow: 0px 0px 2rem black;
 }
 .carousel-item{
@@ -35,7 +35,7 @@ h1{
     color:aliceblue;
     border-radius: 2rem;
     border: none;
-     box-shadow: 0px 0px 3rem rgb(1, 10, 14) !important;
+     box-shadow: 0px 0px 3rem rgb(0, 142, 224) !important;
 }
 .card-text{
     padding-top: 1rem;
@@ -45,12 +45,12 @@ h1{
     display: none;
 }
 .card:hover{
-    box-shadow: 0px 0px 3rem rgb(6, 176, 255) !important;
+    box-shadow: 0px 0px 3rem rgb(6, 255, 193) !important;
     transform: translateY(-1rem);
     z-index: 2;
 }
 .card-body{
-    background: linear-gradient(to left, rgb(23, 51, 83),rgb(5, 111, 153));
+    background: linear-gradient(to left, rgb(32, 53, 112),rgb(3, 184, 145));
     border-bottom-left-radius:2rem ;
     border-bottom-right-radius:2rem ;
     
@@ -89,7 +89,7 @@ h1{
     flex:1 1  50%;
 }
 .fondo1:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png');
 }
 span.hash{
     margin: 0rem 0.2rem;
@@ -132,7 +132,7 @@ div.compra{
 }
 /* fondo2*/
 .fondo2{
-    background-image: url('https://support.activision.com/content/dam/atvi/support/article-assets/embedded-images/crash-4/CB4-KEYART.jpg');
+    background-image: url('https://www.cnet.com/a/img/resize/f1a6e82d4d71a0b53ee34387320cb0ee97686d40/hub/2024/12/13/6a06f459-b8ae-43ee-8daa-9ece2b19a8d2/elden-ring-nightreign.jpg?auto=webp&fit=crop&height=675&width=1200');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -162,12 +162,12 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo2:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://support.activision.com/content/dam/atvi/support/article-assets/embedded-images/crash-4/CB4-KEYART.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://www.cnet.com/a/img/resize/f1a6e82d4d71a0b53ee34387320cb0ee97686d40/hub/2024/12/13/6a06f459-b8ae-43ee-8daa-9ece2b19a8d2/elden-ring-nightreign.jpg?auto=webp&fit=crop&height=675&width=1200');
 }
 
 /*fondo3*/
 .fondo3{
-    background-image: url('https://nintenduo.com/wp-content/uploads/2022/07/Ventas-DLC-Cuphead-Final-01.webp');
+    background-image: url('https://media.vandal.net/m/8-2023/2023816153040_1.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -197,11 +197,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo3:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://nintenduo.com/wp-content/uploads/2022/07/Ventas-DLC-Cuphead-Final-01.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://media.vandal.net/m/8-2023/2023816153040_1.jpg');
 }
 /*fondo4*/
 .fondo4{
-    background-image: url('https://news.xbox.com/es-latam/wp-content/uploads/sites/4/SMB3D-8967fb8fdaffc0aa39d5-a9a89e7bb50bd7c19c4d.jpg');
+    background-image: url('https://static.wikia.nocookie.net/elderscrolls/images/0/05/Dragon_TopOne.png/revision/latest?cb=20141013093634');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -231,11 +231,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo4:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://news.xbox.com/es-latam/wp-content/uploads/sites/4/SMB3D-8967fb8fdaffc0aa39d5-a9a89e7bb50bd7c19c4d.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://static.wikia.nocookie.net/elderscrolls/images/0/05/Dragon_TopOne.png/revision/latest?cb=20141013093634');
 }
 /*fondo5*/
 .fondo5{
-    background-image: url('https://empepinao86.es/wp-content/uploads/2022/09/qeqe.png');
+    background-image: url('https://www.siliconera.com/wp-content/uploads/2023/09/persona-5-royal-requiem-coffee-includes-keychains.jpeg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -265,11 +265,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo5:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://empepinao86.es/wp-content/uploads/2022/09/qeqe.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://www.siliconera.com/wp-content/uploads/2023/09/persona-5-royal-requiem-coffee-includes-keychains.jpeg');
 }
 /*fondo6*/
 .fondo6{
-    background-image: url('https://nintenduo.com/wp-content/uploads/2026/06/Rayman-Legends-Retold-nth-hero-webp.webp');
+    background-image: url('https://i.blogs.es/d77fa6/ffrint/1366_2000.jpeg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -299,11 +299,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo6:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://nintenduo.com/wp-content/uploads/2026/06/Rayman-Legends-Retold-nth-hero-webp.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i.blogs.es/d77fa6/ffrint/1366_2000.jpeg');
 }
 /*fondo7*/
 .fondo7{
-    background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000049281/e7200824041808289d4a65589ed368f7e08dc2e538a5fd7ee9f8d39e58015c24');
+    background-image: url('https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2020/5/7/wfltxlqaqfpcapomdvvm/monster-hunter-world-iceborn');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -333,11 +333,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo7:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000049281/e7200824041808289d4a65589ed368f7e08dc2e538a5fd7ee9f8d39e58015c24');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2020/5/7/wfltxlqaqfpcapomdvvm/monster-hunter-world-iceborn');
 }
 /*fondo8*/
 .fondo8{
-    background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250760/capsule_616x353.jpg?t=1780266579');
+    background-image: url('https://i0.wp.com/losreyesdelmando.com/wp-content/uploads/2017/01/horizon.jpg?fit=1920%2C1032&ssl=1');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -367,11 +367,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo8:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250760/capsule_616x353.jpg?t=1780266579');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i0.wp.com/losreyesdelmando.com/wp-content/uploads/2017/01/horizon.jpg?fit=1920%2C1032&ssl=1');
 }
 /*fondo9*/
 .fondo9{
-    background-image: url('https://assets.doublefine.com/images/screenshots/Psychonauts-2/Psychonauts-2-Screenshot-Brain-in-a-Jar-10-Levitation-Ball.jpeg');
+    background-image: url('https://gaming-cdn.com/images/news/articles/10342/cover/1000x563/what-if-patch-5-for-dragon-age-the-veilguard-was-the-last-in-terms-of-new-features-cover6793aea5cd534.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -401,11 +401,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo9:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.doublefine.com/images/screenshots/Psychonauts-2/Psychonauts-2-Screenshot-Brain-in-a-Jar-10-Levitation-Ball.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://gaming-cdn.com/images/news/articles/10342/cover/1000x563/what-if-patch-5-for-dragon-age-the-veilguard-was-the-last-in-terms-of-new-features-cover6793aea5cd534.jpg');
 }
 /*fondo10*/
 .fondo10{
-    background-image: url('https://static.bandainamcoent.eu/high/little-nightmares/little-nightmares-2/00-page-setup/ln2_game-thumbnail.jpg');
+    background-image: url('https://media.revistagq.com/photos/5fae53c70ad64bf4e9526948/16:9/w_1280,c_limit/apps.58021.69011092827716296.e9190db7-6f4c-478c-8555-3edad4336a39.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -435,11 +435,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo10:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://static.bandainamcoent.eu/high/little-nightmares/little-nightmares-2/00-page-setup/ln2_game-thumbnail.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://media.revistagq.com/photos/5fae53c70ad64bf4e9526948/16:9/w_1280,c_limit/apps.58021.69011092827716296.e9190db7-6f4c-478c-8555-3edad4336a39.jpg');
 }
 /*fondo11*/
 .fondo11{
-    background-image: url('https://i.blogs.es/442f82/020119-celeste/1366_2000.jpg');
+    background-image: url('https://variety.com/wp-content/uploads/2019/02/star-wars-jedi-fallen-order.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -469,11 +469,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo11:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i.blogs.es/442f82/020119-celeste/1366_2000.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://variety.com/wp-content/uploads/2019/02/star-wars-jedi-fallen-order.jpg');
 }
 /*fondo12*/
 .fondo12{
-    background-image: url('https://static.wikia.nocookie.net/oriandtheblindforest/images/4/4c/DhI4ZfmVMAAGxb8.jpg/revision/latest?cb=20180815223720');
+    background-image: url('https://cdn.mos.cms.futurecdn.net/RCB4MEP3NPbrkHNnHXpgkN.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -503,7 +503,7 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo12:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://static.wikia.nocookie.net/oriandtheblindforest/images/4/4c/DhI4ZfmVMAAGxb8.jpg/revision/latest?cb=20180815223720');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://cdn.mos.cms.futurecdn.net/RCB4MEP3NPbrkHNnHXpgkN.jpg');
 }
 @media( min-width: 768px ){
     .carousel-item img{
