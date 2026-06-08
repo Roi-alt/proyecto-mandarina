@@ -4,7 +4,7 @@ html, body{
     overflow-x: hidden;
 }
 body{
-      background:linear-gradient(to top , rgb(3, 24, 37),rgb(17, 88, 129) );
+      background:linear-gradient(to top , rgb(37, 9, 70),rgb(9, 10, 61) );
 }
 .text-center.p-5{
     font-weight: bold;
@@ -23,7 +23,7 @@ body{
     text-align: center;
 }
 h1{
-    background-color: rgb(6, 145, 180);
+    background-color: rgb(16, 15, 53);
     box-shadow: 0px 0px 2rem black;
 }
 .carousel-item{
@@ -35,7 +35,7 @@ h1{
     color:aliceblue;
     border-radius: 2rem;
     border: none;
-     box-shadow: 0px 0px 3rem rgb(1, 10, 14) !important;
+     box-shadow: 0px 0px 3rem rgb(38, 0, 255) !important;
 }
 .card-text{
     padding-top: 1rem;
@@ -45,12 +45,12 @@ h1{
     display: none;
 }
 .card:hover{
-    box-shadow: 0px 0px 3rem rgb(6, 176, 255) !important;
+    box-shadow: 0px 0px 3rem rgb(255, 6, 255) !important;
     transform: translateY(-1rem);
     z-index: 2;
 }
 .card-body{
-    background: linear-gradient(to left, rgb(23, 51, 83),rgb(5, 111, 153));
+    background: linear-gradient(to left, rgb(75, 5, 116),rgb(7, 9, 126));
     border-bottom-left-radius:2rem ;
     border-bottom-right-radius:2rem ;
     
@@ -59,7 +59,7 @@ h1{
     display: none;
 }
 .fondo1{
-    background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5');
+    background-image: url('https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000038380/be99e87f8f668b5329d56571ebdfe1b11ea192aed77b8bfa19a9330693c2e27f');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -67,6 +67,7 @@ h1{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo1:hover .card-text{
@@ -88,11 +89,11 @@ h1{
     flex:1 1  50%;
 }
 .fondo1:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000038380/be99e87f8f668b5329d56571ebdfe1b11ea192aed77b8bfa19a9330693c2e27f');
 }
 span.hash{
     margin: 0rem 0.2rem;
-    background-color: rgb(59, 182, 182);
+    background-color: rgb(162, 0, 255);
     padding: 0.3rem;
     border-radius: 1rem;
     display: block;
@@ -106,16 +107,16 @@ span.precio{
     font-size: 1.2rem;
 }
 .btn{
-    background-color: rgb(94, 216, 216);
+    background-color: rgb(140, 0, 255);
     color: aliceblue;
     font-weight: bold;
     font-size: 2rem;
       border-radius: 1rem;
-    box-shadow: 0px 0px 1rem rgb(0, 204, 255);   
+    box-shadow: 0px 0px 1rem rgb(89, 0, 255);   
 }
 .btn:hover{
-    background-color: rgb(0, 60, 255);
-     box-shadow: 0px 0px 1rem rgb(9, 51, 143);
+    background-color: rgb(255, 0, 255);
+     box-shadow: 0px 0px 1rem rgb(255, 0, 200);
   
 }
 div.compra{
@@ -131,7 +132,7 @@ div.compra{
 }
 /* fondo2*/
 .fondo2{
-    background-image: url('https://support.activision.com/content/dam/atvi/support/article-assets/embedded-images/crash-4/CB4-KEYART.jpg');
+    background-image: url('https://i.guim.co.uk/img/media/be4cbc05a792dd3251d999eda7d8c48977d7666f/120_0_3600_2160/master/3600.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=8cb751628845c6a482bd0da03a5848b9');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -139,6 +140,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo2:hover .card-text{
@@ -160,12 +162,12 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo2:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://support.activision.com/content/dam/atvi/support/article-assets/embedded-images/crash-4/CB4-KEYART.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i.guim.co.uk/img/media/be4cbc05a792dd3251d999eda7d8c48977d7666f/120_0_3600_2160/master/3600.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=8cb751628845c6a482bd0da03a5848b9');
 }
 
 /*fondo3*/
 .fondo3{
-    background-image: url('https://nintenduo.com/wp-content/uploads/2022/07/Ventas-DLC-Cuphead-Final-01.webp');
+    background-image: url('https://gocdkeys.es/assets/thumbnails/portal-2-pc-cd-key-1.webp');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -173,6 +175,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo3:hover .card-text{
@@ -194,11 +197,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo3:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://nintenduo.com/wp-content/uploads/2022/07/Ventas-DLC-Cuphead-Final-01.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://gocdkeys.es/assets/thumbnails/portal-2-pc-cd-key-1.webp');
 }
 /*fondo4*/
 .fondo4{
-    background-image: url('https://news.xbox.com/es-latam/wp-content/uploads/sites/4/SMB3D-8967fb8fdaffc0aa39d5-a9a89e7bb50bd7c19c4d.jpg');
+    background-image: url('https://cdn2.unrealengine.com/talos-principle-2-header-1920x1080-6b216b83eea3.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -206,6 +209,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo4:hover .card-text{
@@ -227,11 +231,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo4:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://news.xbox.com/es-latam/wp-content/uploads/sites/4/SMB3D-8967fb8fdaffc0aa39d5-a9a89e7bb50bd7c19c4d.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://cdn2.unrealengine.com/talos-principle-2-header-1920x1080-6b216b83eea3.jpg');
 }
 /*fondo5*/
 .fondo5{
-    background-image: url('https://empepinao86.es/wp-content/uploads/2022/09/qeqe.png');
+    background-image: url('https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000008551/be533f83694491bdc7cb34fa58cf1583f0d024bc163ca5ea15ec5738ff7eeccd');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -239,6 +243,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo5:hover .card-text{
@@ -260,11 +265,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo5:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://empepinao86.es/wp-content/uploads/2022/09/qeqe.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000008551/be533f83694491bdc7cb34fa58cf1583f0d024bc163ca5ea15ec5738ff7eeccd');
 }
 /*fondo6*/
 .fondo6{
-    background-image: url('https://nintenduo.com/wp-content/uploads/2026/06/Rayman-Legends-Retold-nth-hero-webp.webp');
+    background-image: url('https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltaf1945e11b92f4e1/650f0674e29ba81ee5edffb7/Unpacking_Header.png?width=1280&auto=webp&quality=80&format=jpg&disable=upscale');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -272,6 +277,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo6:hover .card-text{
@@ -293,11 +299,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo6:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://nintenduo.com/wp-content/uploads/2026/06/Rayman-Legends-Retold-nth-hero-webp.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltaf1945e11b92f4e1/650f0674e29ba81ee5edffb7/Unpacking_Header.png?width=1280&auto=webp&quality=80&format=jpg&disable=upscale');
 }
 /*fondo7*/
 .fondo7{
-    background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000049281/e7200824041808289d4a65589ed368f7e08dc2e538a5fd7ee9f8d39e58015c24');
+    background-image: url('https://miro.medium.com/1*MPR08n_EUmqvR2iu3DYy2w.jpeg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -305,6 +311,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo7:hover .card-text{
@@ -326,11 +333,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo7:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000049281/e7200824041808289d4a65589ed368f7e08dc2e538a5fd7ee9f8d39e58015c24');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://miro.medium.com/1*MPR08n_EUmqvR2iu3DYy2w.jpeg');
 }
 /*fondo8*/
 .fondo8{
-    background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250760/capsule_616x353.jpg?t=1780266579');
+    background-image: url('https://cdn2.unrealengine.com/chants-of-sennaar-is-a-love-letter-to-the-power-of-communication-and-community-overlook-1920x1080-b39701b706aa.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -338,6 +345,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo8:hover .card-text{
@@ -359,11 +367,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo8:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250760/capsule_616x353.jpg?t=1780266579');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://cdn2.unrealengine.com/chants-of-sennaar-is-a-love-letter-to-the-power-of-communication-and-community-overlook-1920x1080-b39701b706aa.jpg');
 }
 /*fondo9*/
 .fondo9{
-    background-image: url('https://assets.doublefine.com/images/screenshots/Psychonauts-2/Psychonauts-2-Screenshot-Brain-in-a-Jar-10-Levitation-Ball.jpeg');
+    background-image: url('https://i.blogs.es/232823/superliminal1/1366_2000.jpeg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -371,6 +379,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo9:hover .card-text{
@@ -392,11 +401,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo9:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://assets.doublefine.com/images/screenshots/Psychonauts-2/Psychonauts-2-Screenshot-Brain-in-a-Jar-10-Levitation-Ball.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i.blogs.es/232823/superliminal1/1366_2000.jpeg');
 }
 /*fondo10*/
 .fondo10{
-    background-image: url('https://static.bandainamcoent.eu/high/little-nightmares/little-nightmares-2/00-page-setup/ln2_game-thumbnail.jpg');
+    background-image: url('https://eclectic-thoughts.com/wp-content/uploads/2019/09/Fez2.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -404,6 +413,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo10:hover .card-text{
@@ -425,11 +435,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo10:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://static.bandainamcoent.eu/high/little-nightmares/little-nightmares-2/00-page-setup/ln2_game-thumbnail.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://eclectic-thoughts.com/wp-content/uploads/2019/09/Fez2.jpg');
 }
 /*fondo11*/
 .fondo11{
-    background-image: url('https://i.blogs.es/442f82/020119-celeste/1366_2000.jpg');
+    background-image: url('https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/13064387/the-witness-review-hero.0.0.1487627032.jpg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -437,6 +447,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo11:hover .card-text{
@@ -458,11 +469,11 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo11:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i.blogs.es/442f82/020119-celeste/1366_2000.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/13064387/the-witness-review-hero.0.0.1487627032.jpg');
 }
 /*fondo12*/
 .fondo12{
-    background-image: url('https://static.wikia.nocookie.net/oriandtheblindforest/images/4/4c/DhI4ZfmVMAAGxb8.jpg/revision/latest?cb=20180815223720');
+    background-image: url('https://i.blogs.es/d7e7bd/inside1/1366_2000.jpeg');
     height: 50%;
     padding: 1rem;
     background-size: cover;
@@ -470,6 +481,7 @@ div.compra{
     border-top-left-radius:2rem ;
     border-top-right-radius:2rem ;
     transition: 2s;
+    background-position: center;
     
 }
 .fondo12:hover .card-text{
@@ -491,7 +503,7 @@ div.compra{
     flex:1 1  50%;
 }
 .fondo12:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://static.wikia.nocookie.net/oriandtheblindforest/images/4/4c/DhI4ZfmVMAAGxb8.jpg/revision/latest?cb=20180815223720');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)), url('https://i.blogs.es/d7e7bd/inside1/1366_2000.jpeg');
 }
 @media( min-width: 768px ){
     .carousel-item img{
