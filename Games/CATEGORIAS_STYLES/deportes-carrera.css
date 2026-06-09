@@ -4,7 +4,7 @@ html, body{
     overflow-x: hidden;
 }
 body{
-      background:linear-gradient(to top , rgb(82, 50, 21),rgb(129, 67, 17) );
+      background:linear-gradient(to top , rgb(16, 3, 37),rgb(170, 7, 148) );
 }
 .text-center.p-5{
     font-weight: bold;
@@ -23,7 +23,7 @@ body{
     text-align: center;
 }
 h1{
-    background-color: rgb(94, 62, 35);
+    background-color: rgb(166, 27, 179);
     box-shadow: 0px 0px 2rem black;
 }
 .carousel-item{
@@ -35,7 +35,7 @@ h1{
     color:aliceblue;
     border-radius: 2rem;
     border: none;
-     box-shadow: 0px 0px 3rem rgb(1, 10, 14) !important;
+     box-shadow: 0px 0px 3rem rgb(115, 8, 255) !important;
 }
 .card-text{
     padding-top: 1rem;
@@ -45,12 +45,12 @@ h1{
     display: none;
 }
 .card:hover{
-    box-shadow: 0px 0px 3rem rgb(255, 118, 6) !important;
+    box-shadow: 0px 0px 3rem  rgb(255, 0, 212) !important;
     transform: translateY(-1rem);
     z-index: 2;
 }
 .card-body{
-    background: linear-gradient(to left, rgb(126, 86, 34),rgb(201, 124, 8));
+    background: linear-gradient(to left, rgb(113, 1, 165),rgb(255, 2, 128));
     border-bottom-left-radius:2rem ;
     border-bottom-right-radius:2rem ;
     
@@ -93,7 +93,7 @@ h1{
 }
 span.hash{
     margin: 0rem 0.2rem;
-    background-color: rgb(218, 132, 4);
+    background-color:rgb(140, 22, 187);
     padding: 0.3rem;
     border-radius: 1rem;
     display: block;
@@ -107,16 +107,16 @@ span.precio{
     font-size: 1.2rem;
 }
 .btn{
-    background-color: rgb(245, 150, 26);
+    background-color:rgb(132, 3, 218);
     color: aliceblue;
     font-weight: bold;
     font-size: 2rem;
       border-radius: 1rem;
-    box-shadow: 0px 0px 1rem rgb(255, 251, 22);   
+    box-shadow: 0px 0px 1rem rgb(149, 5, 185);   
 }
 .btn:hover{
-    background-color: rgb(0, 60, 255);
-     box-shadow: 0px 0px 1rem rgb(9, 51, 143);
+    background-color:rgb(255, 0, 221);
+     box-shadow: 0px 0px 1rem rgb(195, 0, 255);
   
 }
 div.compra{
