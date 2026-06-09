@@ -105,18 +105,15 @@ main {
     margin-bottom: 10px;
 }
 
-/* Suavizado de la apertura del acordeón */
 .accordion-collapse {
     transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
     opacity: 0;
 }
 
-/* Cuando el acordeón está abierto, Bootstrap le agrega la clase .show */
 .accordion-collapse.show {
     opacity: 1;
 }
 
-/* Suavizado del botón al hacer click */
 .accordion-button {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
@@ -130,9 +127,7 @@ main {
     line-height: 1.6;
     background:
         radial-gradient(circle at 10% 10%, rgba(126, 255, 51, 0.226) 0%, transparent 40%),
-        /* Fucsia */
         radial-gradient(circle at 90% 90%, rgba(255, 123, 0, 0.432) 0%, transparent 40%),
-        /* Cian */
         linear-gradient(135deg, #125438 0%, #09332c 100%);
     color: antiquewhite
 }
@@ -145,7 +140,6 @@ main {
 
 .fondo-minecraft::before {
     background-attachment: fixed;
-    /* Esto crea el efecto profundidad */
     content: "";
     position: absolute;
     top: 0;
@@ -204,9 +198,7 @@ main {
     line-height: 1.6;
     background:
         radial-gradient(circle at 10% 10%, rgba(51, 255, 51, 0.322) 0%, transparent 40%),
-        /* Fucsia */
         radial-gradient(circle at 90% 90%, rgba(255, 108, 23, 0.432) 0%, transparent 40%),
-        /* Cian */
         linear-gradient(135deg, #125254 0%, #092b33 100%);
     color: antiquewhite
 }
@@ -219,7 +211,6 @@ main {
 
 .fondo-pvz::before {
     background-attachment: fixed;
-    /* Esto crea el efecto profundidad */
     content: "";
     position: absolute;
     top: 0;

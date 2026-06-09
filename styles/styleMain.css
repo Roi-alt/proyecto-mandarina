@@ -75,8 +75,6 @@ body {
     border-right: 1px solid #2d2d35;
     color: transparent;
 }
-
-/* Expansión flotante (No mueve nada del main) */
 .sidebar:hover {
     width: var(--sidebar-expanded-width);
     box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5);
@@ -107,20 +105,17 @@ body {
     display: inline-block;
 }
 
-/* Para Chrome, Safari y Edge */
+/* Para Chrome, */
 .sidebar::-webkit-scrollbar {
     display: none;
 }
 
-/* Para Firefox */
 .sidebar {
     scrollbar-width: none;
 }
 
-/* Asegura que el scroll siga funcionando */
 .sidebar {
     -ms-overflow-style: none;
-    /* Para Internet Explorer */
     overflow-y: auto;
 }
 
@@ -148,7 +143,6 @@ body {
     background: #00FFAE;
     color: #1A0F2E;
     width: 50px;
-    /* Se expande un poco al pasar el mouse */
 }
 
 /***********************************************************
@@ -156,36 +150,28 @@ body {
 ***********************************************************/
 .main-content {
     flex: 1;
-    /* Reserva permanentemente el espacio del sidebar colapsado */
     margin-left: var(--sidebar-collapsed-width);
     background-color: #0e071b;
     min-width: 0;
-    /* Evita que el flexbox se desborde con tablas o rows */
 }
 
 /***********************************************************/
 /*                    HERO INMERSIVO                       */
 /***********************************************************/
-/* 1. Asegura que el contenedor del carrusel tome la altura del Hero */
 #carouselExampleAutoplaying,
 .carousel-inner,
 .carousel-item {
     height: 450px;
 }
 
-/* 2. La magia: fuerza a la imagen a llenar todo el espacio sin deformarse */
 .hero-img {
     height: 100% !important;
     width: 100% !important;
 
     object-fit: cover;
-    /* Esto hace que la imagen se recorte y rellene el espacio */
     object-position: center;
-    /* Centra la imagen siempre */
 }
 
-
-/* Capa oscura interna del hero para asegurar legibilidad del texto */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -286,12 +272,10 @@ body {
     box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Títulos pequeños con separación de letras estilo gaming */
 .tracking-wider {
     letter-spacing: 1px;
 }
 
-/* Estilos de las listas de enlaces */
 .footer-menu a {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
@@ -301,12 +285,9 @@ body {
 
 .footer-menu a:hover {
     color: #00FFAE;
-    /* Cambia a verde al pasar el cursor */
     padding-left: 4px;
-    /* Leve empuje hacia la derecha */
 }
 
-/* Estilos de los botones de Redes Sociales */
 .redes-sociales .btn {
     border-color: #2d1254;
     background-color: #251046;
@@ -342,26 +323,19 @@ body {
 
     .sidebar {
         left: -100%;
-        /* Fuera de pantalla */
         width: 80% !important;
-        /* Más ancho para que sea cómodo */
         transition: left 0.3s ease;
     }
 
     .sidebar.active {
         left: 0;
         z-index: 2000;
-        /* Aparece al activarse */
     }
 
     .main-content {
         margin-left: 0 !important;
-        /* Elimina el margen en móvil */
         padding-top: 50px;
-        /* Espacio para el botón de menú */
     }
-
-    /* Fondo oscuro al abrir el menú */
     .sidebar-overlay.active {
         display: block;
         position: fixed;
@@ -385,7 +359,6 @@ body {
 
 }
 
-/* Estilos específicos para Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
     .sidebar-trigger-btn {
         display: none;
