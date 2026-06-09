@@ -99,6 +99,63 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>`;
     document.body.insertAdjacentHTML('beforeend', ModCom);
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const FootCom = `
+        <footer class="site-footer mt-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/036/218/371/small/ai-generated-futuristic-blue-robot-playing-virtual-reality-games-generated-by-ai-free-photo.jpg"
+                            alt="Logo" width="40" class="rounded">
+                        <span class="navbar-brand fw-bold text-success fs-4">PAPUJUEGOS</span>
+                    </div>
+                    <p class="text-white-50 small">La plataforma definitiva para descubrir, jugar y compartir tus títulos favoritos con una comunidad brutal.</p>
+                </div>
+
+                <div class="col-6 col-md-2 offset-md-1">
+                    <h6 class="text-white text-uppercase fw-bold mb-3 small tracking-wider">Explorar</h6>
+                    <ul class="list-unstyled footer-menu">
+                        <li class="mb-2"><a href="#">Home</a></li>
+                        <li class="mb-2"><a href="#">Juegos</a></li>
+                        <li class="mb-2"><a href="#">Categorías</a></li>
+                        <li class="mb-2"><a href="#">Comunidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h6 class="text-white text-uppercase fw-bold mb-3 small tracking-wider">Ayuda</h6>
+                    <ul class="list-unstyled footer-menu">
+                        <li class="mb-2"><a href="#">Soporte Técnico</a></li>
+                        <li class="mb-2"><a href="#">Términos de Uso</a></li>
+                        <li class="mb-2"><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <h6 class="text-white text-uppercase fw-bold mb-3 small tracking-wider">Únete a la Comunidad</h6>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 redes-sociales">
+                        <a href="#" class="btn btn-outline-light btn-sm" title="Discord"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm" title="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm" title="Twitch"><i class="bi bi-twitch"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm" title="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-white-50 small">&copy; 2026 <span class="text-success fw-bold">Papujuegos</span>. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>`;
+    document.body.insertAdjacentHTML('beforeend', FootCom);
+});
 function Comprar(precio) {
     preOr = parseFloat(precio);
     document.getElementById('forComp').reset();

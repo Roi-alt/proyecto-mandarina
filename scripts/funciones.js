@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" id="nav-acerca" href="#">Acerca de</a></li>
-                            <li class="nav-item"><a class="nav-link" id="nav-soporte" href="#">Soporte</a></li>
+                            <li class="nav-item"><a class="nav-link" id="nav-soporte" href="#" onclick="Contacto()">Soporte</a></li>
                         </ul>
                         
                         <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.insertAdjacentHTML('afterbegin', NavCom);
     VerUsu();
 });
-document.addEventListener("DOMContentLoaded", function () {   
+document.addEventListener("DOMContentLoaded", function () {
     const FootCom = `
         <footer class="site-footer mt-5">
         <div class="container py-5">
@@ -213,6 +213,10 @@ function Contacto() {
                 Swal.showValidationMessage('Por favor, completa todos los campos.');
                 return false;
             }
+            if (!regexNom.test(nombre)) {
+                Swal.showValidationMessage("Ingrese un único nombre válido.");
+                return false;
+            }
             if (!correo.includes('@') || !correo.includes('.')) {
                 Swal.showValidationMessage('Por favor, ingresa un correo válido.');
                 return false;
@@ -250,6 +254,7 @@ function Prox() {
 
 const regexUs = /^[a-zA-Z0-9._-]{3,16}$/;
 const regexCor = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const regexNom = /^[A-Z][a-zñáéíóú]+$/;
 
 function VerUsu() {
     const ActivUs = localStorage.getItem("ActivUs");

@@ -1,9 +1,9 @@
-    document.addEventListener('focusin', function(e) {
-        if (e.target.closest('.swal2-container')) {
-            e.stopImmediatePropagation();
-        }
-    });
-    document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('focusin', function (e) {
+    if (e.target.closest('.swal2-container')) {
+        e.stopImmediatePropagation();
+    }
+});
+document.addEventListener("DOMContentLoaded", function () {
     const ModCom = `
         <div class="modal fade" id="mComp" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -46,22 +46,79 @@
                 </div>
             </div>
         </div>`;
-        document.body.insertAdjacentHTML('beforeend', ModCom);
-    });
-    function Comprar(precio) {
-        preOr = parseFloat(precio); 
-        document.getElementById('forComp').reset();
-        document.getElementById('CajErr').style.display = 'none';
-        document.getElementById('BloDes').style.display = 'none';
-        var ConMod = document.getElementById('mComp');
-        var M = new bootstrap.Modal(ConMod);
-        M.show();
-    }
-    function Contacto() {
-        Swal.fire({
-            icon: 'info',
-            title: 'SOPORTE Y CONTACTO',
-            html: `
+    document.body.insertAdjacentHTML('beforeend', ModCom);
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const FootCom = `
+        <footer class="site-footer mt-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/036/218/371/small/ai-generated-futuristic-blue-robot-playing-virtual-reality-games-generated-by-ai-free-photo.jpg"
+                            alt="Logo" width="40" class="rounded">
+                        <span class="navbar-brand fw-bold text-success fs-4">PAPUJUEGOS</span>
+                    </div>
+                    <p class="text-white-50 small">La plataforma definitiva para descubrir, jugar y compartir tus títulos favoritos con una comunidad brutal.</p>
+                </div>
+
+                <div class="col-6 col-md-2 offset-md-1">
+                    <h6 class="text-white text-uppercase fw-bold mb-3 small tracking-wider">Explorar</h6>
+                    <ul class="list-unstyled footer-menu">
+                        <li class="mb-2"><a href="#">Home</a></li>
+                        <li class="mb-2"><a href="#">Juegos</a></li>
+                        <li class="mb-2"><a href="#">Categorías</a></li>
+                        <li class="mb-2"><a href="#">Comunidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h6 class="text-white text-uppercase fw-bold mb-3 small tracking-wider">Ayuda</h6>
+                    <ul class="list-unstyled footer-menu">
+                        <li class="mb-2"><a href="#">Soporte Técnico</a></li>
+                        <li class="mb-2"><a href="#">Términos de Uso</a></li>
+                        <li class="mb-2"><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <h6 class="text-white text-uppercase fw-bold mb-3 small tracking-wider">Únete a la Comunidad</h6>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 redes-sociales">
+                        <a href="#" class="btn btn-outline-light btn-sm" title="Discord"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm" title="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm" title="Twitch"><i class="bi bi-twitch"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm" title="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-white-50 small">&copy; 2026 <span class="text-success fw-bold">Papujuegos</span>. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>`;
+    document.body.insertAdjacentHTML('beforeend', FootCom);
+});
+function Comprar(precio) {
+    preOr = parseFloat(precio);
+    document.getElementById('forComp').reset();
+    document.getElementById('CajErr').style.display = 'none';
+    document.getElementById('BloDes').style.display = 'none';
+    var ConMod = document.getElementById('mComp');
+    var M = new bootstrap.Modal(ConMod);
+    M.show();
+}
+function Contacto() {
+    Swal.fire({
+        icon: 'info',
+        title: 'SOPORTE Y CONTACTO',
+        html: `
                 <div class="text-start px-1 gen">
                     <div class="mb-3">
                         <label class="form-label lbl-general">Nombre Completo</label>
@@ -79,66 +136,66 @@
                     </div>
                 </div>
             `,
-            background: '#1A0F2E',
-            customClass: {
-                popup: 'pop-general',
-                icon: 'ico',
-                title: 'tit-general',
-                confirmButton: 'btn-pri',
-                cancelButton: 'btn-sec'
-            },
-            buttonsStyling: false,
-            showCancelButton: true,
-            confirmButtonText: 'ENVIAR',
-            cancelButtonText: 'CANCELAR',
-            focusConfirm: false,
-            preConfirm: () => {
-                const nombre = Swal.getPopup().querySelector('#gen-nombre').value.trim();
-                const correo = Swal.getPopup().querySelector('#gen-correo').value.trim();
-                const mensaje = Swal.getPopup().querySelector('#gen-mensaje').value.trim();
-                if (!nombre || !correo || !mensaje) {
-                    Swal.showValidationMessage('Por favor, completa todos los campos.');
-                    return false;
-                }
-                if (!correo.includes('@') || !correo.includes('.')) {
-                    Swal.showValidationMessage('Por favor, ingresa un correo válido.');
-                    return false;
-                }
-                return { nombre, correo, mensaje };
+        background: '#1A0F2E',
+        customClass: {
+            popup: 'pop-general',
+            icon: 'ico',
+            title: 'tit-general',
+            confirmButton: 'btn-pri',
+            cancelButton: 'btn-sec'
+        },
+        buttonsStyling: false,
+        showCancelButton: true,
+        confirmButtonText: 'ENVIAR',
+        cancelButtonText: 'CANCELAR',
+        focusConfirm: false,
+        preConfirm: () => {
+            const nombre = Swal.getPopup().querySelector('#gen-nombre').value.trim();
+            const correo = Swal.getPopup().querySelector('#gen-correo').value.trim();
+            const mensaje = Swal.getPopup().querySelector('#gen-mensaje').value.trim();
+            if (!nombre || !correo || !mensaje) {
+                Swal.showValidationMessage('Por favor, completa todos los campos.');
+                return false;
             }
-        }).then((result) => {
-            if (result.isConfirmed) {
-                Swal.fire({
-                    title: '¡Recibido!',
-                    text: `Gracias ${result.value.nombre}. Te responderemos pronto.`,
-                    icon: 'success',
-                    background: '#1A0F2E',
-                    color: '#00FFAE',
-                    confirmButtonColor: '#FF4757'
-                });
+            if (!correo.includes('@') || !correo.includes('.')) {
+                Swal.showValidationMessage('Por favor, ingresa un correo válido.');
+                return false;
             }
-        });
-    }
-    function Prox(){
-        Swal.fire({
-            title: '¡Próximamente!',
-            text: `Dentro de poco agregaremos más juegos a nuestro catálogo`,
-            imageUrl: 'prox.png',
-            imageWidth: 200,
-            imageHeight: 200,
-            customClass:{
-                title: 'tit-general',
-            },
-            background: '#1A0F2E',
-            color: '#00FFAE',
-            confirmButtonColor: '#FF4757'
-        });
-    }
+            return { nombre, correo, mensaje };
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: '¡Recibido!',
+                text: `Gracias ${result.value.nombre}. Te responderemos pronto.`,
+                icon: 'success',
+                background: '#1A0F2E',
+                color: '#00FFAE',
+                confirmButtonColor: '#FF4757'
+            });
+        }
+    });
+}
+function Prox() {
+    Swal.fire({
+        title: '¡Próximamente!',
+        text: `Dentro de poco agregaremos más juegos a nuestro catálogo`,
+        imageUrl: 'prox.png',
+        imageWidth: 200,
+        imageHeight: 200,
+        customClass: {
+            title: 'tit-general',
+        },
+        background: '#1A0F2E',
+        color: '#00FFAE',
+        confirmButtonColor: '#FF4757'
+    });
+}
 
-    function Login() {
-        Swal.fire({
-            title: 'INICIAR SESIÓN',
-            html: `
+function Login() {
+    Swal.fire({
+        title: 'INICIAR SESIÓN',
+        html: `
                 <div class="text-start px-1 gen">
                     <div class="mb-3">
                         <label class="form-label lbl-general">Nombre de Usuario</label>
@@ -161,43 +218,43 @@
                     </div>
                 </div>
             `,
-            background: '#1A0F2E',
-            customClass: {
-                popup: 'pop-general',
-                title: 'tit-general',
-                confirmButton: 'btn-pri',
-                cancelButton: 'btn-sec'
-            },
-            buttonsStyling: false,
-            showCancelButton: true,
-            confirmButtonText: 'SIGUIENTE',
-            cancelButtonText: 'CANCELAR',
-            focusConfirm: false,
-            preConfirm: () => {
-                const usuario = Swal.getPopup().querySelector('#log-usuario').value.trim();
-                const correo = Swal.getPopup().querySelector('#log-correo').value.trim();
-                const clave = Swal.getPopup().querySelector('#log-clave').value.trim();
-                const terminos = Swal.getPopup().querySelector('#log-terminos').checked;
-                if (!usuario || !clave || !correo) {
-                    Swal.showValidationMessage('Por favor, completa todos los campos.');
-                    return false;
-                }
-                if (!terminos) {
-                    Swal.showValidationMessage('Debes aceptar los términos y condiciones para continuar.');
-                    return false;
-                }
-                return { usuario: usuario, clave: clave };
+        background: '#1A0F2E',
+        customClass: {
+            popup: 'pop-general',
+            title: 'tit-general',
+            confirmButton: 'btn-pri',
+            cancelButton: 'btn-sec'
+        },
+        buttonsStyling: false,
+        showCancelButton: true,
+        confirmButtonText: 'SIGUIENTE',
+        cancelButtonText: 'CANCELAR',
+        focusConfirm: false,
+        preConfirm: () => {
+            const usuario = Swal.getPopup().querySelector('#log-usuario').value.trim();
+            const correo = Swal.getPopup().querySelector('#log-correo').value.trim();
+            const clave = Swal.getPopup().querySelector('#log-clave').value.trim();
+            const terminos = Swal.getPopup().querySelector('#log-terminos').checked;
+            if (!usuario || !clave || !correo) {
+                Swal.showValidationMessage('Por favor, completa todos los campos.');
+                return false;
             }
-        }).then((result) => {
-            if (result.isConfirmed) {
-                SignUp(result.value);
+            if (!terminos) {
+                Swal.showValidationMessage('Debes aceptar los términos y condiciones para continuar.');
+                return false;
             }
-        });
-    }
-    function SignUp(DatLog) {
-        Swal.fire({
-            title: 'VERIFICACIÓN DE REGISTRO (SIGN UP)',
-            html: `
+            return { usuario: usuario, clave: clave };
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            SignUp(result.value);
+        }
+    });
+}
+function SignUp(DatLog) {
+    Swal.fire({
+        title: 'VERIFICACIÓN DE REGISTRO (SIGN UP)',
+        html: `
                 <div class="text-start px-1 gen">
                     <p class="text-white-50 small mb-3 text-center" style="font-size:12px;">
                         Por seguridad, repite tus credenciales para confirmar la creación de tu cuenta.
@@ -213,147 +270,147 @@
                     </div>
                 </div>
             `,
-            background: '#1A0F2E',
-            customClass: {
-                popup: 'pop-general',
-                title: 'tit-general',
-                confirmButton: 'btn-pri',
-                cancelButton: 'btn-sec'
-            },
-            buttonsStyling: false,
-            showCancelButton: true,
-            confirmButtonText: 'REGISTRAR',
-            cancelButtonText: 'ATRÁS',
-            focusConfirm: false,
-            preConfirm: () => {
-                const User = Swal.getPopup().querySelector('#sign-usuario').value.trim();
-                const Pass = Swal.getPopup().querySelector('#sign-clave').value.trim();
+        background: '#1A0F2E',
+        customClass: {
+            popup: 'pop-general',
+            title: 'tit-general',
+            confirmButton: 'btn-pri',
+            cancelButton: 'btn-sec'
+        },
+        buttonsStyling: false,
+        showCancelButton: true,
+        confirmButtonText: 'REGISTRAR',
+        cancelButtonText: 'ATRÁS',
+        focusConfirm: false,
+        preConfirm: () => {
+            const User = Swal.getPopup().querySelector('#sign-usuario').value.trim();
+            const Pass = Swal.getPopup().querySelector('#sign-clave').value.trim();
 
-                if (!User || !Pass) {
-                    Swal.showValidationMessage('Por favor, rellene ambos campos de confirmación.');
-                    return false;
-                }
-                if (User !== DatLog.usuario || Pass !== DatLog.clave) {
-                    Swal.showValidationMessage('Los datos no coinciden, por favor revíselos');
-                    return false;
-                }
-                return { usuario: User };
+            if (!User || !Pass) {
+                Swal.showValidationMessage('Por favor, rellene ambos campos de confirmación.');
+                return false;
             }
-        }).then((result) => {
-            if (result.isConfirmed) {
-                Swal.fire({
-                    title: '¡CUENTA CREADA!',
-                    text: `Bienvenido a nuestra tienda ${result.value.usuario.toUpperCase()}.`,
-                    icon: 'success',
-                    background: '#1A0F2E',
-                    color: '#00FFAE',
-                    confirmButtonColor: '#FF4757'
-                });
-            } else if (result.isDismissed && Swal.DismissReason.cancel) {
-                Login();
+            if (User !== DatLog.usuario || Pass !== DatLog.clave) {
+                Swal.showValidationMessage('Los datos no coinciden, por favor revíselos');
+                return false;
             }
-        });
-    }
-
-    function valfor(event) {
-            event.preventDefault();
-            const errorDiv = document.getElementById('CajErr');            
-            const correo = document.getElementById('f-correo').value.trim();
-            const ci = document.getElementById('f-ci').value.trim();
-            const tel = document.getElementById('f-tel').value.trim();
-            const tarjeta = document.getElementById('f-tarjeta').value.trim();
-            const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            const regNum = /^[0-9]+$/;
-            const regexCI = /^[0-9]{8}$/;
-            const regexTel = /^[0-9]{7,8}$/;
-
-            errorDiv.style.display = 'none';
-            errorDiv.innerText = '';
-
-            if (!regexEmail.test(correo)) {
-                MosEr('Por favor, introduce un correo electrónico válido.');
-                return;
-            }
-            if (!regexCI.test(ci)) {
-                MosEr('El Cárnet de Identidad debe contener exactamente 8 dígitos numéricos.');
-                return;
-            }
-            if (!regexTel.test(tel)) {
-                MosEr('El número telefónico debe tener 7 u 8 dígitos numéricos.');
-                return;
-            }
-            if (!tarjeta || !regNum.test(tarjeta)) {
-                MosEr('El número de tarjeta es obligatorio y debe contener solo dígitos.');
-                return;
-            }
-            Swal.fire({
-                title: '¡COMPRA EXITOSA!',
-                text: 'Procesando tus datos de forma segura...',
-                icon: 'success',
-                background: '#110920',
-                color: '#ffffff',
-                iconColor: '#00FFAE',
-                confirmButtonText: 'Aceptar',
-                customClass: {
-                    popup: 'pop-general',
-                    confirmButton: 'btn-pri'
-                },
-                buttonsStyling: false
-            });
-            document.getElementById('forComp').reset();
+            return { usuario: User };
         }
-    function MosEr(mensaje) {
-        const errorDiv = document.getElementById('CajErr');
-        errorDiv.innerText = mensaje;
-        errorDiv.style.display = 'block';
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: '¡CUENTA CREADA!',
+                text: `Bienvenido a nuestra tienda ${result.value.usuario.toUpperCase()}.`,
+                icon: 'success',
+                background: '#1A0F2E',
+                color: '#00FFAE',
+                confirmButtonColor: '#FF4757'
+            });
+        } else if (result.isDismissed && Swal.DismissReason.cancel) {
+            Login();
+        }
+    });
+}
+
+function valfor(event) {
+    event.preventDefault();
+    const errorDiv = document.getElementById('CajErr');
+    const correo = document.getElementById('f-correo').value.trim();
+    const ci = document.getElementById('f-ci').value.trim();
+    const tel = document.getElementById('f-tel').value.trim();
+    const tarjeta = document.getElementById('f-tarjeta').value.trim();
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regNum = /^[0-9]+$/;
+    const regexCI = /^[0-9]{8}$/;
+    const regexTel = /^[0-9]{7,8}$/;
+
+    errorDiv.style.display = 'none';
+    errorDiv.innerText = '';
+
+    if (!regexEmail.test(correo)) {
+        MosEr('Por favor, introduce un correo electrónico válido.');
+        return;
     }
-    function CanTi(event) {
-        event.preventDefault();
-        Swal.fire({
-            title: 'CANJEAR TICKET',
-            text: 'Introduce el código de 4 dígitos de tu cupón:',
-            input: 'text',
-            inputAttributes: {
-                maxlength: '4',
-                placeholder: 'Ej. 4582',
-                style: 'text-center; letter-spacing: 5px; font-size: 20px;'
-            },
-            background: '#1A0F2E',
-            color: '#ffffff',
-            customClass: {
-                popup: 'pop-general',
-                title: 'tit-general',
-                input: 'inputs text-center',
-                confirmButton: 'btn-pri',
-                cancelButton: 'btn-sec'
-            },
-            buttonsStyling: false,
-            showCancelButton: true,
-            confirmButtonText: 'VALIDAR',
-            cancelButtonText: 'CANCELAR',
-            inputValidator: (value) => {
-                const regexTicket = /^[0-9]{4}$/;                
-                if (!value.trim()) {
-                    return 'El espacio no puede estar vacío.';
-                }
-                if (!regexTicket.test(value.trim())) {
-                    return 'El ticket solo puede tener 4 digitos numéricos';
-                }
-            }
-        }).then((result) => {
-            if (result.isConfirmed) {
-                const Npre = preOr * 0.75;
-                document.getElementById('NewPre').innerText = `NUEVO PRECIO: $ ${Npre.toFixed(2)} USD`;
-                const bloqueDesc = document.getElementById('BloDes');
-                bloqueDesc.style.display = 'block';
-                Swal.fire({
-                    title: '¡TICKET APLICADO!',
-                    text: 'El descuento del 25% se ha reflejado en tu orden de compra.',
-                    icon: 'success',
-                    background: '#1A0F2E',
-                    color: '#00FFAE',
-                    confirmButtonColor: '#FF4757'
-                });
-            }
-        });
+    if (!regexCI.test(ci)) {
+        MosEr('El Cárnet de Identidad debe contener exactamente 8 dígitos numéricos.');
+        return;
     }
+    if (!regexTel.test(tel)) {
+        MosEr('El número telefónico debe tener 7 u 8 dígitos numéricos.');
+        return;
+    }
+    if (!tarjeta || !regNum.test(tarjeta)) {
+        MosEr('El número de tarjeta es obligatorio y debe contener solo dígitos.');
+        return;
+    }
+    Swal.fire({
+        title: '¡COMPRA EXITOSA!',
+        text: 'Procesando tus datos de forma segura...',
+        icon: 'success',
+        background: '#110920',
+        color: '#ffffff',
+        iconColor: '#00FFAE',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+            popup: 'pop-general',
+            confirmButton: 'btn-pri'
+        },
+        buttonsStyling: false
+    });
+    document.getElementById('forComp').reset();
+}
+function MosEr(mensaje) {
+    const errorDiv = document.getElementById('CajErr');
+    errorDiv.innerText = mensaje;
+    errorDiv.style.display = 'block';
+}
+function CanTi(event) {
+    event.preventDefault();
+    Swal.fire({
+        title: 'CANJEAR TICKET',
+        text: 'Introduce el código de 4 dígitos de tu cupón:',
+        input: 'text',
+        inputAttributes: {
+            maxlength: '4',
+            placeholder: 'Ej. 4582',
+            style: 'text-center; letter-spacing: 5px; font-size: 20px;'
+        },
+        background: '#1A0F2E',
+        color: '#ffffff',
+        customClass: {
+            popup: 'pop-general',
+            title: 'tit-general',
+            input: 'inputs text-center',
+            confirmButton: 'btn-pri',
+            cancelButton: 'btn-sec'
+        },
+        buttonsStyling: false,
+        showCancelButton: true,
+        confirmButtonText: 'VALIDAR',
+        cancelButtonText: 'CANCELAR',
+        inputValidator: (value) => {
+            const regexTicket = /^[0-9]{4}$/;
+            if (!value.trim()) {
+                return 'El espacio no puede estar vacío.';
+            }
+            if (!regexTicket.test(value.trim())) {
+                return 'El ticket solo puede tener 4 digitos numéricos';
+            }
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            const Npre = preOr * 0.75;
+            document.getElementById('NewPre').innerText = `NUEVO PRECIO: $ ${Npre.toFixed(2)} USD`;
+            const bloqueDesc = document.getElementById('BloDes');
+            bloqueDesc.style.display = 'block';
+            Swal.fire({
+                title: '¡TICKET APLICADO!',
+                text: 'El descuento del 25% se ha reflejado en tu orden de compra.',
+                icon: 'success',
+                background: '#1A0F2E',
+                color: '#00FFAE',
+                confirmButtonColor: '#FF4757'
+            });
+        }
+    });
+}
