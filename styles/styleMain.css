@@ -60,9 +60,7 @@ body {
 /***********************************************************/
 .sidebar {
     position: fixed;
-    /* Mantenemos fijo */
     top: 0;
-    /* CAMBIO: Empieza desde arriba de todo, no desde el header */
     left: 0;
     width: var(--sidebar-collapsed-width);
     height: 100vh;
@@ -126,6 +124,32 @@ body {
     overflow-y: auto;
 }
 
+.sidebar-trigger-btn {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 2000;
+    background: #2d1254;
+    color: #00FFAE;
+    border: 2px solid #00FFAE;
+    width: 35px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transform: translateY(-50%);
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 2px 0 10px rgba(0, 255, 174, 0.2);
+    transition: all 0.3s ease;
+}
+
+.sidebar-trigger-btn:hover {
+    background: #00FFAE;
+    color: #1A0F2E;
+    width: 50px;
+    /* Se expande un poco al pasar el mouse */
+}
 
 /***********************************************************
                     CONTENIDO PRINCIPAL                  
@@ -299,4 +323,89 @@ body {
     color: #00FFAE;
     box-shadow: 0 0 10px rgba(30, 128, 82, 0.4);
     transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+    .site-footer {
+        text-align: center;
+    }
+
+    .footer-menu {
+        margin-bottom: 2rem;
+    }
+
+    .redes-sociales .btn {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    .sidebar {
+        left: -100%;
+        /* Fuera de pantalla */
+        width: 80% !important;
+        /* Más ancho para que sea cómodo */
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.active {
+        left: 0;
+        z-index: 2000;
+        /* Aparece al activarse */
+    }
+
+    .main-content {
+        margin-left: 0 !important;
+        /* Elimina el margen en móvil */
+        padding-top: 50px;
+        /* Espacio para el botón de menú */
+    }
+
+    /* Fondo oscuro al abrir el menú */
+    .sidebar-overlay.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1045;
+    }
+
+    .sidebar-trigger-btn {
+        width: 40px;
+        height: 70px;
+        opacity: 0.9;
+    }
+
+    .sidebar-trigger-btn.hidden {
+        display: none !important;
+    }
+
+}
+
+/* Estilos específicos para Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .sidebar-trigger-btn {
+        display: none;
+    }
+
+    .sidebar {
+        width: 5%;
+
+    }
+
+    .sidebar:hover {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar-trigger-btn {
+        display: none !important;
+    }
 }
