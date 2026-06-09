@@ -845,3 +845,43 @@
     transform: scale(1.1);
     color: #ff6b7b;
 }
+
+/* ==========================================================================
+   DESDE AQUÍ ES ESTILOS DEL FOOTER
+   ========================================================================== */
+.site-footer {
+    background-color: #1a0933;
+    border-top: 2px solid #2d1254;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.tracking-wider {
+    letter-spacing: 1px;
+}
+
+.footer-menu a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.footer-menu a:hover {
+    color: #00FFAE;
+    padding-left: 4px;
+}
+
+.redes-sociales .btn {
+    border-color: #2d1254;
+    background-color: #251046;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.redes-sociales .btn:hover {
+    background-color: transparent;
+    border-color: #00FFAE;
+    color: #00FFAE;
+    box-shadow: 0 0 10px rgba(30, 128, 82, 0.4);
+    transform: translateY(-2px);
+}

@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
     const FootCom = `
-        <footer class="site-footer mt-5">
+        <footer class="site-footer ">
         <div class="container py-5">
             <div class="row g-4">
                 
