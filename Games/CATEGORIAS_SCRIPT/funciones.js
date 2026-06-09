@@ -174,7 +174,7 @@ function Prox() {
     Swal.fire({
         title: '¡Próximamente!',
         text: `Dentro de poco agregaremos más juegos a nuestro catálogo`,
-        imageUrl: '../Games/Images/prox.png',
+        imageUrl: 'prox.png',
         imageWidth: 200,
         imageHeight: 200,
         customClass: {
